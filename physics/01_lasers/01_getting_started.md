@@ -28,9 +28,7 @@ In classical view (an extended version of Newtonian mechanics), these energy lev
 
 ![](./img/01_classical_atom.png)
 
-This idea is very outdated and is wrong as we move towards the concept of Quantum Mechanics. The atom is often represented like this in some books to keep things simple.
-
-In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels.
+This idea is very outdated and is wrong as we move towards the concept of Quantum Mechanics. The atom is often represented like this in some books to keep things simple. In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels.
 
 ### Energy Level Diagrams:
 
