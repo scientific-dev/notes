@@ -30,15 +30,15 @@ In classical view (an extended version of Newtonian mechanics), these energy lev
 
 This idea is very outdated and is wrong as we move towards the concept of Quantum Mechanics. The atom is often represented like this in some books to keep things simple. In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels.
 
-### Energy Level Diagrams:
+### Energy Level Diagrams
 
 To explain phenomena related to interaction between radiation and matter, we need a good diagrammatic representation of an atom. As stated earlier, we are not interested in outdated classical representation of atom anymore in favour of the quantum mechanical model.
 
 Now, if we follow the quantum mechanical model, representing orbitals in an atom is highly complicated, making it even more challenging to use those diagrams to explain certain phenomena. 
 
-We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron moves from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
+We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
 
-![](./img/02_energy_levels.png)
+![](./img/02_comparison_model.png)
 
 ## References: 
 
