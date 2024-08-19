@@ -34,15 +34,11 @@ In the quantum mechanical model of the atom, we consider electrons to be in the 
 
 ### Energy Level Diagrams:
 
-To explain phenomena related to interaction between radiation and matter, we need a good diagrammatic representation of an atom.
-
-As stated earlier, we are not interested in outdated classical representation of atom anymore in favour of the quantum mechanical model.
+To explain phenomena related to interaction between radiation and matter, we need a good diagrammatic representation of an atom. As stated earlier, we are not interested in outdated classical representation of atom anymore in favour of the quantum mechanical model.
 
 Now, if we follow the quantum mechanical model, representing orbitals in an atom is highly complicated, making it even more challenging to use those diagrams to explain certain phenomena. 
 
-We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron moves from E1 to E2, the atom too goes from E1 to E2.
-
-So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
+We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron moves from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
 
 ![](./img/02_energy_levels.png)
 
