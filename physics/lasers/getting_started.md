@@ -22,6 +22,14 @@ In classical view (an extended version of Newtonian mechanics), these energy lev
 
 ![](./img/classic_atom.png)
 
+::: mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+:::
+
 This idea is very outdated and is wrong as we have moved towards the concept of Quantum Mechanics. The atom is often represented like this to keep things simple.
 
 In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels. So, in this chapter, to maintain accuracy with the topic, we won't be using such diagrammatic representation of atom. Instead, we will be using energy level diagrams.
