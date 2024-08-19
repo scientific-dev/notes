@@ -29,7 +29,8 @@ flowchart TD
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
-:```
+:
+```
 
 This idea is very outdated and is wrong as we have moved towards the concept of Quantum Mechanics. The atom is often represented like this to keep things simple.
 
