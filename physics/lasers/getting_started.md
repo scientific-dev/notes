@@ -23,11 +23,12 @@ In classical view (an extended version of Newtonian mechanics), these energy lev
 ![](./img/classic_atom.png)
 
 ``` mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
 :```
 
 This idea is very outdated and is wrong as we have moved towards the concept of Quantum Mechanics. The atom is often represented like this to keep things simple.
