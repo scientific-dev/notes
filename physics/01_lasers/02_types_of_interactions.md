@@ -43,8 +43,6 @@ Photons emitted by two atoms excited under (and are in) identical conditions und
     <i>2.3 Stimulated Emission</i>
 </p>
 
-Although, atoms can get de-excited without any external aid as seen in Spontaneous emission, they can also get de-excited by an incident photon of an energy equal to the energy difference between the excited levels.
-
-When such de-excitation happens, the atom emits another photon which will be in phase (i.e. coherent) with the incident photon.
+Although, atoms can get de-excited without any external aid as seen in Spontaneous emission, they can also get de-excited by an incident photon of an energy equal to the energy difference between the excited levels. When such de-excitation happens, the atom emits another photon which will be in phase (i.e. coherent) with the incident photon.
 
 The idea of emission can happen in two ways (i.e. spontaneous and stimulated) unlike absorption (which is only one) was proposed by Einstein in 1917.
