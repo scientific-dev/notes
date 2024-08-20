@@ -26,7 +26,7 @@
 		"prefix": "img",
 		"body": [
 			"<p align=\"center\">",
-			"\t<img src=\"$1\">",
+			"\t<img src=\"$1\"><br/>",
 			"\t<i>$2</i>",
 			"</p>"
 		]
