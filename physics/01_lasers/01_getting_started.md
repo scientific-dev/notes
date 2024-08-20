@@ -6,7 +6,7 @@ LASER means **Light Amplification by Stimulated Emission of Radiation**. To unde
 
 ### Energy Level
 
-An energy level is a specific, quantized state that an e⁻ can occupy in an atom or molecule, each with a fixed energy value. We will be studying about these energy levels in depth when we will be learning Quantum Physics.
+An energy level is a specific, quantized state that an $e^{-}$ can occupy in an atom or molecule, each with a fixed energy value. We will be studying about these energy levels in depth when we will be learning Quantum Physics.
 
 **What does an atom getting excited mean?**
 
@@ -20,11 +20,11 @@ If an electron has been excited, then the atom too gets excited but if an atom h
 
 ### Energy Gap
 
-Usually for an **isolated gaseous atom**, there are many energy levels in discrete which the electron can occupy. But, in the case of solids, due to tightly packed atoms and their orbital overlap, the discrete energy levels become very close and appear to be continuous. Such continuous energy levels are called as energy bands and the e⁻ can take any energy value between the lowest and highest value of energy band. The concept of energy bands will be discussed again in Band Theory of Solids in depth.
+Usually for an **isolated gaseous atom**, there are many energy levels in discrete which the electron can occupy. But, in the case of solids, due to tightly packed atoms and their orbital overlap, the discrete energy levels become very close and appear to be continuous. Such continuous energy levels are called as energy bands and the $e^{-}$ can take any energy value between the lowest and highest value of energy band. The concept of energy bands will be discussed again in Band Theory of Solids in depth.
 
 ### Classical Representation of Atom
 
-In classical view (an extended version of Newtonian mechanics), these energy levels are related with the orbits of the e⁻ revolving around the nucleus.
+In classical view (an extended version of Newtonian mechanics), these energy levels are related with the orbits of the $e^{-}$ revolving around the nucleus.
 
 
 <p align="center">
@@ -40,14 +40,14 @@ To explain phenomena related to interaction between radiation and matter, we nee
 
 Now, if we follow the quantum mechanical model, representing orbitals in an atom is highly complicated, making it even more challenging to use those diagrams to explain certain phenomena. 
 
-We have discussed earlier that in this chapter we are going to relate energy states of an atom with the energy state of its outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too excites from E1 to E2. So, instead of using diagrams of electrons, orbitals or orbits, we will be using the diagram of energy levels to explain several phenomena.
+We have discussed earlier that in this chapter we are going to relate energy states of an atom with the energy state of its outermost valence electron, i.e. when an electron excites from $E_{1}$ to $E_{2}$, the atom too excites from $E_{1}$ to $E_{2}$. So, instead of using diagrams of electrons, orbitals or orbits, we will be using the diagram of energy levels to explain several phenomena.
 
 <p align="center">
     <img src="./img/02_energy_levels.png"><br/>
     <i>1.2. Energy level diagram of an Atom.</i>
 </p>
 
-One can compare this with fig. 1.1 classical representation of an atom. This energy level diagram helps use to visualise in which energy state the atom (or its outermost valence shell e⁻) is in without violating any idea of quantum mechanical model of an atom.
+One can compare this with fig. 1.1 classical representation of an atom. This energy level diagram helps use to visualise in which energy state the atom (or its outermost valence shell $e^{-}$) is in without violating any idea of quantum mechanical model of an atom.
 
 ## References: 
 

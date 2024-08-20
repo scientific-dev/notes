@@ -19,7 +19,12 @@
 	"electron": {
 		"scope": "markdown",
 		"prefix": "e-",
-		"body": ["e⁻"]
+		"body": ["\\$e^{-}$"]
+	},
+	"energy": {
+		"scope": "markdown",
+		"prefix": "E",
+		"body": ["\\$E_{$1}$"]
 	},
 	"image": {
 		"scope": "markdown",
