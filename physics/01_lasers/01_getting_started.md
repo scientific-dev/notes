@@ -26,7 +26,11 @@ Usually for an **isolated gaseous atom**, there are many energy levels in discre
 
 In classical view (an extended version of Newtonian mechanics), these energy levels are related with the orbits of the e⁻ revolving around the nucleus.
 
-![](./img/01_classical_atom.png)
+
+<p align="center">
+    <img src="./img/01_classical_atom.png">
+    <i>1.1 Classical Representation of an Atom</i>
+</p>
 
 This idea is very outdated and is wrong as we move towards the concept of Quantum Mechanics. The atom is often represented like this in some books to keep things simple. In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels.
 
@@ -38,7 +42,10 @@ Now, if we follow the quantum mechanical model, representing orbitals in an atom
 
 We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
 
-![](./img/02_comparison_model.png)
+<p align="center">
+    <img src="./img/02_comparison_model.png">
+    <i>1.2. The outdated classical representation of an atom compared with energy level diagram of an atom.</i>
+</p>
 
 ## References: 
 

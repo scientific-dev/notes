@@ -20,5 +20,15 @@
 		"scope": "markdown",
 		"prefix": "e-",
 		"body": ["e⁻"]
+	},
+	"image": {
+		"scope": "markdown",
+		"prefix": "img",
+		"body": [
+			"<p align=\"center\">",
+			"\t<img src=\"$1\">",
+			"\t<i>$2</i>",
+			"</p>"
+		]
 	}
 }
