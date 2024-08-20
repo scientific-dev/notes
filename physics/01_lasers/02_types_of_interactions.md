@@ -17,7 +17,11 @@ This interaction is also called as **Induced Absorption** in some books (like in
 
 Here (and for the other 2 interactions too), assume $E_{1}$ is the ground state and $E_{2}$ is some excited state of that atom.
 
+```math
+
 $\Delta E = E_{1} - E_{2}$<br/>
+
+```
 
 Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, by **Planck's formula**,
 
