@@ -40,12 +40,14 @@ To explain phenomena related to interaction between radiation and matter, we nee
 
 Now, if we follow the quantum mechanical model, representing orbitals in an atom is highly complicated, making it even more challenging to use those diagrams to explain certain phenomena. 
 
-We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
+We have discussed earlier that in this chapter we are going to relate energy states of an atom with the energy state of its outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too excites from E1 to E2. So, instead of using diagrams of electrons, orbitals or orbits, we will be using the diagram of energy levels to explain several phenomena.
 
 <p align="center">
     <img src="./img/02_energy_levels.png"><br/>
-    <i>1.2. The outdated classical representation of an atom compared with energy level diagram of an atom.</i>
+    <i>1.2. Energy level diagram of an Atom.</i>
 </p>
+
+One can compare this with fig. 1.1 classical representation of an atom. This energy level diagram helps use to visualise in which energy state the atom (or its outermost valence shell e⁻) is in without violating any idea of quantum mechanical model of an atom.
 
 ## References: 
 
