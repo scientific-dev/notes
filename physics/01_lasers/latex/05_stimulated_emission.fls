@@ -1,7 +1,7 @@
 PWD d:\MIT Notes\physics\01_lasers\latex
 INPUT C:\Users\Titoo\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\MIT Notes\physics\01_lasers\latex\03_induced_absorption.tex
-OUTPUT 03_induced_absorption.log
+INPUT d:\MIT Notes\physics\01_lasers\latex\05_stimulated_emission.tex
+OUTPUT 05_stimulated_emission.log
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -148,10 +148,10 @@ INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\dec
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\03_induced_absorption.aux
-INPUT .\03_induced_absorption.aux
-INPUT 03_induced_absorption.aux
-OUTPUT 03_induced_absorption.aux
+INPUT .\05_stimulated_emission.aux
+INPUT .\05_stimulated_emission.aux
+INPUT 05_stimulated_emission.aux
+OUTPUT 05_stimulated_emission.aux
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -175,9 +175,9 @@ INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tf
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-OUTPUT 03_induced_absorption.pdf
+OUTPUT 05_stimulated_emission.pdf
 INPUT C:\Users\Titoo\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT 03_induced_absorption.aux
+INPUT 05_stimulated_emission.aux
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Titoo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb

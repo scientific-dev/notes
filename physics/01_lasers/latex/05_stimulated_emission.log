@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.20)  20 AUG 2024 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.20)  20 AUG 2024 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/MIT Notes/physics/01_lasers/latex/03_induced_absorption.tex"
-(d:/MIT Notes/physics/01_lasers/latex/03_induced_absorption.tex
+**"d:/MIT Notes/physics/01_lasers/latex/05_stimulated_emission.tex"
+(d:/MIT Notes/physics/01_lasers/latex/05_stimulated_emission.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Titoo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -272,8 +272,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box63
-) (03_induced_absorption.aux)
-\openout1 = `03_induced_absorption.aux'.
+) (05_stimulated_emission.aux)
+\openout1 = `05_stimulated_emission.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -349,25 +349,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 32.
+(Font)              <17.28> on input line 38.
 Excluding 'comment' comment. [1
 
-{C:/Users/Titoo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (03_induced_absorption.aux)
+{C:/Users/Titoo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (05_stimulated_emission.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13215 strings out of 474485
- 282117 string characters out of 5743734
+ 13228 strings out of 474485
+ 282398 string characters out of 5743734
  1928542 words of memory out of 5000000
- 35293 multiletter control sequences out of 15000+600000
+ 35306 multiletter control sequences out of 15000+600000
  562641 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,6n,107p,475b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,6n,107p,476b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on 03_induced_absorption.pdf (1 page, 47757 bytes).
+Output written on 05_stimulated_emission.pdf (1 page, 48410 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

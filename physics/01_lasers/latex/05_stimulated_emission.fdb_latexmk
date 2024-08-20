@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1724162380.907 "d:/MIT Notes/physics/01_lasers/latex/03_induced_absorption.tex" "03_induced_absorption.pdf" "03_induced_absorption" 1724162382.76374 0
-  "03_induced_absorption.aux" 1724162382 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "03_induced_absorption.tex" 1724162379 1240 73e0f50cd7e9976bd6c99d879fbdf2ae ""
+["pdflatex"] 1724164275.86554 "d:/MIT Notes/physics/01_lasers/latex/05_stimulated_emission.tex" "05_stimulated_emission.pdf" "05_stimulated_emission" 1724164277.25827 0
+  "05_stimulated_emission.aux" 1724164276 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "05_stimulated_emission.tex" 1724164274 1508 caf2bacc33239d6ab3d3e62110afec73 ""
   "C:/Users/Titoo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1724161369 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Titoo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724092256 24225087 86884da56acd831978c702112bb5d549 ""
   "C:/Users/Titoo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -108,9 +108,9 @@
   "C:/Users/Titoo/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/Titoo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1700127522 9125 e0e22f8bd8f488926acdd4e96dcc4d1e ""
   "C:/Users/Titoo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "d:/MIT Notes/physics/01_lasers/latex/03_induced_absorption.tex" 1724162379 1240 73e0f50cd7e9976bd6c99d879fbdf2ae ""
+  "d:/MIT Notes/physics/01_lasers/latex/05_stimulated_emission.tex" 1724164274 1508 caf2bacc33239d6ab3d3e62110afec73 ""
   (generated)
-  "03_induced_absorption.aux"
-  "03_induced_absorption.log"
-  "03_induced_absorption.pdf"
+  "05_stimulated_emission.aux"
+  "05_stimulated_emission.log"
+  "05_stimulated_emission.pdf"
   (rewritten before read)
