@@ -43,7 +43,7 @@ Now, if we follow the quantum mechanical model, representing orbitals in an atom
 We have discussed earlier that in this chapter we are going to relate excitation of atom with the excitation of the outermost valence electron, i.e. when an electron excites from E1 to E2, the atom too goes from E1 to E2. So, instead of using electrons, orbitals or orbits, we will be using atoms and their corresponding energy levels to explain several phenomena.
 
 <p align="center">
-    <img src="./img/02_comparison_model.png"><br/>
+    <img src="./img/02_energy_levels.png"><br/>
     <i>1.2. The outdated classical representation of an atom compared with energy level diagram of an atom.</i>
 </p>
 
