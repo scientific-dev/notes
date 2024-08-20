@@ -18,7 +18,7 @@ Radiation and matter can interact in three different ways (one absorption, two e
     <i>2.2 Spontaneous Emission</i>
 </p>
 
-### Stimulated Absorption
+### Stimulated Emission
 
 <p align="center">
     <img src="./img/05_stimulated_emission.png"><br/>
