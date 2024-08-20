@@ -35,5 +35,14 @@
 			"\t<i>$2</i>",
 			"</p>"
 		]
+	},
+	"center": {
+		"scope": "markdown",
+		"prefix": "center",
+		"body": [
+			"<p align=\"center\">",
+			"\t$1",
+			"</p>"
+		]
 	}
 }
