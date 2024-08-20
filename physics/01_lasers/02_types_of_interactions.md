@@ -19,7 +19,7 @@ Here (and for the other 2 interactions too), assume $E_{1}$ is the ground state 
 
 ```math
 
-$\Delta E = E_{1} - E_{2}$<br/>
+\Delta E = E_{1} - E_{2}
 
 ```
 
