@@ -56,3 +56,5 @@ One can compare this with fig. 1.1 classical representation of an atom. This ene
 - Watch this [YT video](https://www.youtube.com/watch?v=_JOchLyNO_w&t=233s) for a complete animated video of the whole mechanism of LASER. The only con of this video will be its attempt of using the classical representation of atom in it.
 
 - See this [Reddit post](https://www.reddit.com/r/Physics/comments/1ev7gss/are_energy_levels_for_electrons_or_atoms/) for question on energy levels.
+
+This page has to be updated once we complete studying Quantum Physics and its mechanics.
