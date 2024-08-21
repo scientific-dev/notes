@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, pdfborder={0 0 0}, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[a4paper, margin=.5in]{geometry}
+\usepackage{float}
+
+\begin{document}
+
+\title{Lasers}
+\author{Sudarsan D Naidu}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+LASER means \textbf{Light Amplification by Stimulated Emission of Radiation}. To understand the mechanism of Laser, one has to understand the concept of Energy levels (which will be studied later in Quantum Field theory).
+
+\subsection{Energy Level}
+
+An energy level is a specific, quantized state that an $e^{-}$ can occupy in an atom or molecule, each with a fixed energy value. We will be studying about these energy levels in depth when we will be learning Quantum Physics. \vspace{.2cm}
+
+\textbf{What does an atom getting excited mean?} An atom getting excited means that the atom has gained some energy (relative to its ground state). When an electron of the atom get excited, it gains energy and as an electron is part of an atom, so the atom too does gain energy. From whatever we know till now, when a photon is absorbed by an atom, it is more accurate to say that the electron has been excited. But, in this chapter, we will often keep atom as our point of reference. So, whenever we say that an atom has been excited, we refer to excitation of the outermost valence shell electron. Refer to Born-Oppenheimer approximation for a better idea on how nucleus of an atom is not affected when the photon is absorbed by the atom.
+
+\begin{quote}
+    If an electron has been excited, then the atom too gets excited but if an atom has been excited, there are many possibilities. But, in this chapter, we will be only considering the excitation of the outermost valence shell electron as the only possibility.
+\end{quote}
+
+\subsection{Energy Gap}
+
+Usually for an \textbf{isolated gaseous atom}, there are many energy levels in discrete which the electron can occupy. But, in the case of solids, due to tightly packed atoms and their orbital overlap, the discrete energy levels become very close and appear to be continuous. Such continuous energy levels are called as energy bands and the $e^{-}$ can take any energy value between the lowest and highest value of energy band. The concept of energy bands will be discussed again in Band Theory of Solids in depth.
+
+\subsection{Classical Representation of Atom}
+
+In classical view (an extended version of Newtonian mechanics), these energy levels are related with the orbits of the $e^{-}$ revolving around the nucleus (See figure 1).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{./img/01_classical_atom.png}
+    \caption{Classical Representation of an Atom}
+\end{figure}
+
+This idea is very outdated and is wrong as we move towards the concept of Quantum Mechanics. The atom is often represented like this in some books to keep things simple. In the quantum mechanical model of the atom, we consider electrons to be in the orbitals corresponding to their energy levels.
+
+\subsection{Energy Level Diagrams}
+
+To explain phenomena related to interaction between radiation and matter, we need a good diagrammatic representation of an atom. As stated earlier, we are not interested in outdated classical representation of atom anymore in favour of the quantum mechanical model. \vspace{.2cm}
+
+Now, if we follow the quantum mechanical model, representing orbitals in an atom is highly complicated, making it even more challenging to use those diagrams to explain certain phenomena. We have discussed earlier that in this chapter we are going to equate energy states of an atom with the energy state of its outermost valence electron, i.e. when an electron excites from $E_{1}$ to $E_{2}$, the atom too excites from $E_{1}$ to $E_{2}$. So, instead of using diagrams of electrons, orbitals or orbits, we will be using the diagram of energy levels (see figure 2) to explain several phenomena.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{./img/02_energy_levels.png}
+    \caption{Energy level diagram of an Atom}
+\end{figure}
+
+This energy level diagram helps use to visualise in which energy state the atom (or its outermost valence shell $e^{-}$) is in without violating any idea of quantum mechanical model of an atom. Compare figure 2 with figure 1.
+
+\subsection{References}
+
+\begin{itemize}
+    \item Read Basavaraju's book on Engineering Physics for fundamental ideas (Chapter 5 Lasers)
+    \item Watch this \href{https://www.youtube.com/watch?v=_JOchLyNO_w&t=233s}{YT video} for a complete animated video of the whole mechanism of LASER. The only con of this video will be its attempt of using the classical representation of atom in it.
+    \item See this \href{https://www.reddit.com/r/Physics/comments/1ev7gss/are_energy_levels_for_electrons_or_atoms/}{Reddit post} for question on energy levels.
+\end{itemize}
+
+This page has to be updated once we complete studying Quantum Physics and its mechanics.
+
+\section{Types of Interactions}
+
+Working of laser depends on the three different ways of interaction of radiation and matter. In this chapter, there will only be an introduction to the interactions and will study them later in depth in Quantum Mechanics. \textbf{Note} that these interactions happen only in isolated atoms with discrete $E$ levels.
+
+\subsection{Stimulated Absorption}
+
+This interaction is also called as \textbf{Induced Absorption} in some books (like in Basavaraju) while in some others, it is called as \textbf{Stimulated Absorption}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{./img/03_induced_absorption.png}
+    \caption{Stimulated Absorption}
+\end{figure}
+
+Here (and for the other 2 interactions too), assume $E_{1}$ is the ground state and $E_{2}$ is some excited state of that atom.
+
+$\Delta E = E_{1} - E_{2}$ \vspace{.2cm}
+
+Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, by \textbf{Planck's formula},
+
+$\Delta E = h\nu$ 
+
+\subsection{Spontaneous Emission}
+
+\begin{figure}[hbp]
+    \centering
+    \includegraphics[scale=0.5]{./img/04_spontaneous_emission.png}
+    \caption{Spontaneous Emission}
+\end{figure}
+
+Any atom in an excited state is unstable and tends to de-excite to the ground state without any external aid (thus spontaneous). During this process, it emits an photon of an energy equal to the energy difference. \textbf{Note} that, there is an universal tendency for any system to be in the lowest energy state to keep itself stable.
+
+Photons emitted by two atoms excited under (and are in) identical conditions undergoing spontaneous emission, \textbf{will not have any phase relationship} (i.e. in any direction and can have phase differences). So, photons emitted under this process are incoherent (i.e. no phase relationship). Such incoherent emissions can be seen in Thermoionic emission in bulb, candle flame, etc.
+
+\subsection{Stimulated Emission}
+
+\begin{figure}[hbp]
+    \centering
+    \includegraphics[scale=0.5]{./img/05_stimulated_emission.png}
+    \caption{Stimulated Emission}
+\end{figure}
+
+Although, atoms can get de-excited without any external aid as seen in Spontaneous emission, they can also get de-excited by an incident photon of an energy equal to the energy difference between the excited levels. When such de-excitation happens, the atom emits another photon which will be in phase (i.e. coherent) with the incident photon.
+
+The idea of emission can happen in two ways (i.e. spontaneous and stimulated) unlike absorption (which is only one) was proposed by Einstein in 1917.
+
+\end{document}

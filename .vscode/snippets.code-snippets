@@ -25,24 +25,5 @@
 		"scope": "markdown",
 		"prefix": "E",
 		"body": ["\\$E_{$1}$"]
-	},
-	"image": {
-		"scope": "markdown",
-		"prefix": "img",
-		"body": [
-			"<p align=\"center\">",
-			"\t<img src=\"$1\"><br/>",
-			"\t<i>$2</i>",
-			"</p>"
-		]
-	},
-	"center": {
-		"scope": "markdown",
-		"prefix": "center",
-		"body": [
-			"<p align=\"center\">",
-			"\t$1",
-			"</p>"
-		]
 	}
 }
