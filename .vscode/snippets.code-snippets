@@ -17,13 +17,24 @@
 	// }
 
 	"electron": {
-		"scope": "markdown",
+		"scope": "latex",
 		"prefix": "e-",
 		"body": ["\\$e^{-}$"]
 	},
 	"energy": {
-		"scope": "markdown",
+		"scope": "latex",
 		"prefix": "E",
 		"body": ["\\$E_{$1}$"]
+	},
+	"iage": {
+		"scope": "latex",
+		"prefix": "img",
+		"body": [
+			"\\begin{figure}[hbp]",
+			"\t\\centering",
+			"\t\\includegraphics[scale=$2]{./img/$1}",
+			"\t\\caption{$3}",
+			"\\end{figure}"
+		]
 	}
 }
