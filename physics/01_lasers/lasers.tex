@@ -119,13 +119,17 @@ Although, atoms can get de-excited without any external aid as seen in Spontaneo
 
 \section{Population distribution of Atoms in Excited states}
 
-In a system, let $n_{i}$ be the number density (i.e. number of units per unit volume) of atoms existing in the energy state $i$. To keep things more simple in understanding the lasing process, we will use the energy level diagrams to show the distribution of atoms of system in the excited states (see figure 6).
+In a system, let $n_{i}$ be the number density (i.e. number of units per unit volume) of atoms existing in the energy state $i$. To keep things more simple in understanding the lasing process, we will use the energy level diagrams to show the distribution of atoms of system in the excited states (see figure 6). Also, by "population", we mean the "number" of atoms.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=.5]{./img/06_population_dist.png}
     \caption{Population distribution of atoms of the system into their respective energy states}
 \end{figure}
+
+\textbf{Note} that population distribution is only for identical atoms.
+
+In real systems, the number of atoms exceed the number of energy levels possible in that system. (??)
 
 \subsection{Rate of change of Population Density}
 
@@ -158,7 +162,7 @@ In transition of atoms, involving only two states, the rates of other states wil
 
 \subsection{Thermodynamic Equilibrium}
 
-At Thermodynamic Equilibrium, the net energy exchanged will be 0 (energy exchange will happen but the sum will be 0). At this point, the net change in the number of excited atoms will be 0 too because excitation and de-excitation absorb and emit radiation (energy).
+At Thermodynamic Equilibrium, the net energy exchanged will be 0 (energy exchange will happen but the sum will be 0). Excitation and de-excitation of atoms are energy exchanges too as they involve absorbing and emitting radiation (energy), so at Thermodynamic Equilibrium, the net change in the number of excited atoms will be 0 too.
 
 This means, for any state $i$ at Thermodynamic Equilibrium, 
 
@@ -178,7 +182,9 @@ This formula is built on approximation of the theoretical data and works only fo
 
 \section{Einstein's Coefficients}
 
-The formation of atomic spectral lines is due to the three different interactions of radiation and matter which was proposed by Einstein in 1916. Each of these processes are associated with Einstein coefficient, which is a measure of the probability of that particular process occurring. Einstein considered the case of isotropic radiation of frequency $\nu$ (i.e. having same frequency in all directions the radiation is propagating at) and spectral energy density $\rho(\nu)$. \vspace{.2cm}
+The formation of atomic spectral lines is due to the three different interactions of radiation and matter which was proposed by Einstein in 1916. In his studies, he assumed matter is in Thermodynamic Equilibrium (see 3.2) with Black Body radiation.
+
+Each of these processes (interactions) proposed by Einstein are associated with Einstein coefficient, which is a measure of the probability of that particular process occurring. Einstein considered the case of isotropic radiation of frequency $\nu$ (i.e. having same frequency in all directions the radiation is propagating at) and spectral energy density $\rho(\nu)$. \vspace{.2cm}
 
 Read more about this \href{https://en.wikipedia.org/wiki/Einstein_coefficients}{in Wikipedia}.
 
@@ -188,7 +194,7 @@ Let radiation of continous spectrum of frequencies be incident on the system. Le
 
 Also, in some books, this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \textbf{Note} that, this parameter is independent of direction of radiation as we have assumed isotropic frequencies. \vspace{.2cm}
 
-According to Planck's law, the spectral energy density is given as,
+According to \textbf{Planck's law}, the spectral energy density is given as,
 
 \begin{equation}
     \rho(\nu) = \frac{8\pi h\nu^3}{c^3} \frac{1}{e^\frac{h\nu}{kT} - 1}
