@@ -3,6 +3,7 @@
 \usepackage[colorlinks=true, pdfborder={0 0 0}, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 \usepackage[a4paper, margin=.5in]{geometry}
 \usepackage{float}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -82,15 +83,19 @@ This interaction is also called as \textbf{Induced Absorption} in some books (li
 
 Here (and for the other 2 interactions too), assume $E_{1}$ is the ground state and $E_{2}$ is some excited state of that atom.
 
-$\Delta E = E_{1} - E_{2}$ \vspace{.2cm}
+\begin{equation}
+    \Delta E = E_{1} - E_{2}
+\end{equation}
 
-Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, by \textbf{Planck's formula},
+Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, by \textbf{Planck's formula}.
 
-$\Delta E = h\nu$ 
+\begin{equation}
+    \Delta E = h\nu
+\end{equation}
 
 \subsection{Spontaneous Emission}
 
-\begin{figure}[hbp]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{./img/04_spontaneous_emission.png}
     \caption{Spontaneous Emission}
@@ -102,19 +107,133 @@ Photons emitted by two atoms excited under (and are in) identical conditions und
 
 \subsection{Stimulated Emission}
 
-\begin{figure}[hbp]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{./img/05_stimulated_emission.png}
     \caption{Stimulated Emission}
 \end{figure}
 
-Although, atoms can get de-excited without any external aid as seen in Spontaneous emission, they can also get de-excited by an incident photon of an energy equal to the energy difference between the excited levels. When such de-excitation happens, the atom emits another photon which will be in phase (i.e. coherent) with the incident photon.
+Although, atoms can get de-excited without any external aid as seen in Spontaneous emission, they can also get de-excited by an incident photon of an energy equal to the energy difference between the excited levels. When such de-excitation happens, the atom emits another photon which will be in phase (i.e. coherent) with the incident photon. This process is also referred to as "negative absorption".
 
-The idea of emission can happen in two ways (i.e. spontaneous and stimulated) unlike absorption (which is only one) was proposed by Einstein in 1917.
+\section{Einstein's Coefficients}
 
-\section{Population Distribution of Atoms}
+The formation of atomic spectral lines is due to the three different interactions of radiation and matter which was proposed by Einstein in 1916. Each of these processes are associated with Einstein coefficient, which is a measure of the probability of that particular process occurring. Einstein considered the case of isotropic radiation of frequency $\nu$ (i.e. having same frequency in all directions the radiation is propagating at) and spectral energy density $\rho(\nu)$. \vspace{.2cm}
 
-To understand the lasing process in a simplistic manner, we are going to distribute atoms of the system (for any state) into their respective energy levels in a graph. Let there be $N_{p}$ atoms excited at the energy level $E_{p}$ where $p$ is some integer.
+Read more about this \href{https://en.wikipedia.org/wiki/Einstein_coefficients}{in Wikipedia}.
 
+\subsection{Spectral Energy Density}
+
+Let radiation of continous spectrum of frequencies be incident on the system. Let $\rho(\nu)d\nu$ be the energy incident per unit volume (i.e. energy density) of the radiations having frequencies between $\nu$ and $\nu + d\nu$ in the spectrum. Here, $\rho(\nu)$ is called as spectral energy density (having dimensions of $E/A\nu$) which is the energy density per frequency of radiations having frequencies between $\nu$ and $\nu + d\nu$.
+
+Also, in some books, this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \textbf{Note} that, this parameter is independent of direction of radiation as we have assumed isotropic frequencies.
+
+\subsection{Population distribution of Atoms in Excited states}
+
+In a system, let $n_{i}$ be the number density (i.e. number of units per unit volume) of atoms existing in the energy state $i$. To keep things more simple in understanding the lasing process, we will use the energy level diagrams to show the distribution of atoms of system in the excited states (see figure 6).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{./img/06_population_dist.png}
+    \caption{Population distribution of atoms of the system into their respective energy states}
+\end{figure}
+
+Then, $dn_{i}/dt$ will be the rate at which the number density of atoms exciting or de-exciting (depending on the sign of the derivative) to an energy state $i$. 
+
+Let's consider a system having energy states $E_{1}$, $E_{2}$, ..., $E_{i}$. Let it have a total population density (of atoms) $n$,
+
+\begin{equation}
+    n_{1} + n_{2} + ... + n_{i} = n
+\end{equation}
+
+We can differentiate this equation (w.r.t $t$) to get a relation between the rate of atoms exciting and de-exciting in each energy state,
+
+\begin{equation*}
+    \frac{dn_{1}}{dt} + \frac{dn_{2}}{dt} + ... + \frac{dn_{i}}{dt} = \frac{dn}{dt}
+\end{equation*}
+
+In a fixed system, we can assume $n$ to be constant, which makes $dn/dt$ to be 0,
+
+\begin{equation*}
+    \frac{dn_{1}}{dt} + \frac{dn_{2}}{dt} + ... + \frac{dn_{i}}{dt} = 0
+\end{equation*}
+
+In transition of atoms, involving only two states, the rates of other states will become zero,
+
+\begin{align}
+    \frac{dn_{1}}{dt} + \frac{dn_{2}}{dt} & = 0 \notag \\
+    \Rightarrow \frac{dn_{2}}{dt} & = -\frac{dn_{1}}{dt}
+\end{align}
+
+\subsection{Description of Einstein's coefficients}
+
+Let's consider two energy levels $E_{1}$ (ground state) and $E_{2}$ (some excited state) where $n_{1}$ and $n_{2}$ are the respective population densities of atoms in those energy states. Now, let's see how the three kinds of interactions of radiation and matter are described by the Einstein's coefficients,
+
+\subsubsection{Stimulated Absorption}
+
+In this process, the atoms excite from $E_{1}$ to $E_{2}$ due to the incident radiation of frequency $\nu$. To measure the rate of this process (and for the others too), we will consider $E_{1}$ (ground state) and its population density $n_{1}$ as reference, i.e.,
+\begin{align*}
+    \text{Rate of stimulated} & = \text{Rate at which atoms are undergoing stimulated} \\
+    \text{absorption} & \quad \text{absorption from } E_{1} \text{ to } E_{2} \\ 
+    & = (\frac{dn_{1}}{dt})_{s.a.}
+\end{align*}
+
+And, from experiments, we know, 
+\begin{align*}
+    \textnormal{Rate of stimulated absorption} \propto -n_{1}\rho(\nu) \\ 
+    (\frac{dn_{1}}{dt})_{s.a.} \propto -n_{1}\rho(\nu)
+\end{align*}
+
+As atoms excite from $E_{1}$ to $E_{2}$, it results in decrease in $n_{1}$ (and increase in $n_{2}$) which explains the negative sign. The rate of stimulated absorption will be more if there are more atoms in the ground state $E_{1}$ to get excited to $E_{2}$ so the rate depends on $n_{1}$. This points out the fact that the rate of stimulated absorption will decrease as more and more atoms in $E_{1}$ get excited. Also, as this process is initiated by the energy of the incident radiation, it also depends on the spectral energy density of it. \vspace{.2cm}
+
+The proportional constant for the equation is the Einstein coefficient $B_{12}$ where $12$ shows the direction of process (i.e. $E_{1}$ to $E_{2}$). After plugging the Einstein coefficient in the proportional equation, we get,
+
+\begin{equation}
+    (\frac{dn_{1}}{dt})_{s.a.} = -B_{12}n_{1}\rho(\nu) 
+\end{equation}
+
+To find the rate at which the atoms are getting excited to $E_{2}$ by stimulated absorption, we can substitute the above rate in the equation (4),
+
+\begin{equation*}
+    (\frac{dn_{2}}{dt})_{s.a.} = -(\frac{dn_{1}}{dt})_{s.a.} = B_{12}n_{1}\rho(\nu)
+\end{equation*}
+
+\subsubsection{Spontaneous Emission}
+
+In this process, the atoms de-excite from $E_{2}$ to $E_{1}$ spontaneously (i.e. without any external aid). Like we did for stimulated absorption, we are going to consider $E_{1}$ (ground state) as our reference to find rate of this emission.
+\begin{align*}
+    \text{Rate of spontaneous} & = \text{Rate at which atoms are undergoing spontaneous} \\
+    \text{emission} & \quad \text{emission from } E_{2} \text{ to } E_{1} \\ 
+    & = (\frac{dn_{1}}{dt})_{sp.e.}
+\end{align*}
+
+And, from experiments, we know, 
+\begin{align*}
+    \textnormal{Rate of spontaneous emission} \propto n_{2} \\ 
+    (\frac{dn_{1}}{dt})_{sp.e.} \propto n_{2}
+\end{align*}
+
+As atoms de-excite from $E_{2}$ to $E_{1}$, there will be an increase in $n_{1}$ which explains why it has no negative sign. The rate of spontaneous emission will be more if there are more excited atoms in $E_{2}$ (i.e. $n_{2}$) to get de-excited spontaneously, so the rate depends on $n_{2}$. As this process is independent of any external aid (i.e. no incident radiation like in stimulated absorption), the rate is independent of spectral energy density. \vspace{.2cm}
+
+The proportional constant for the equation is the Einstein coefficient $A_{21}$ where $21$ shows the direction of process (i.e. $E_{2}$ to $E_{1}$). After plugging the Einstein coefficient in the proportional equation, we get,
+\begin{equation}
+    (\frac{dn_{1}}{dt})_{sp.e.} = B_{21}n_{2}
+\end{equation}
+
+We can get the rate of this emission keeping $E_{2}$ as our reference by applying equation (4) like we did earlier in stimulated absorption.
+
+\subsubsection{Stimulated Emission}
+
+In this process, the atoms de-excite from $E_{2}$ to $E_{1}$ due to incident of radiation of frequency $\nu$. Taking $E_{1}$ (ground state) as our reference like we did earlier.
+\begin{align*}
+    \text{Rate of spontaneous} & = \text{Rate at which atoms are undergoing spontaneous} \\
+    \text{emission} & \quad \text{emission from } E_{2} \text{ to } E_{1} \\ 
+    & = (\frac{dn_{1}}{dt})_{s.e.}
+\end{align*}
+
+And, from experiments, we know, 
+\begin{align*}
+    \textnormal{Rate of spontaneous emission} \propto n_{2} \\ 
+    (\frac{dn_{1}}{dt})_{s.e.} \propto n_{2}
+\end{align*}
 
 \end{document}

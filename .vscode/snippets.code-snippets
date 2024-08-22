@@ -26,15 +26,25 @@
 		"prefix": "E",
 		"body": ["\\$E_{$1}$"]
 	},
-	"iage": {
+	"image": {
 		"scope": "latex",
 		"prefix": "img",
 		"body": [
-			"\\begin{figure}[hbp]",
+			"\\begin{figure}[H]",
 			"\t\\centering",
 			"\t\\includegraphics[scale=$2]{./img/$1}",
 			"\t\\caption{$3}",
 			"\\end{figure}"
 		]
+	},
+	"href": {
+		"scope": "latex",
+		"prefix": "href",
+		"body": ["\\href{$1}{$2}"]
+	},
+	"break": {
+		"scope": "latex",
+		"prefix": "br",
+		"body": ["\\vspace{.2cm}"]
 	}
 }
