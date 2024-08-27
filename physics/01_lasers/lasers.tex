@@ -15,6 +15,7 @@
 \selectfont
 \captionsetup[figure]{font=normal}
 \newtcolorbox{note}[1][]{colback=white, colframe=black, sharp corners, boxrule=0.3mm, #1}
+\newtcolorbox{block}[1][left=1cm, top=-.2cm, bottom=-.2cm]{colback=white, colframe=white, sharp corners, boxrule=0.3mm, #1}
 
 \title{Lasers}
 \author{Sudarsan D Naidu}
@@ -303,7 +304,7 @@ Again, we can get the rate of this emission keeping $E_{2}$ as our reference by 
 
 \subsubsection{Stimulated absorption-only system}
 
-Let's take a system where atoms only undergo stimulated absorption (no stimulated emission or spontaneous emission) from its $E_{1}$ state to $E_{2}$ state when an radiation of frequency $\nu$ is incident on it. \vspace{.2cm}
+Let's consider a system where atoms only undergo stimulated absorption (no stimulated emission or spontaneous emission) from its $E_{1}$ state to $E_{2}$ state when a radiation of required energy is incident on it. \vspace{.2cm}
 
 In that system, let $P(t)$ be the probability of an atom to undergo stimulated absorption from $E_{1}$ to $E_{2}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{1}$ state at time $t$ (i.e. not undergoing any transition), \vspace{.2cm}
 \begin{equation}
@@ -352,7 +353,7 @@ Using equation (11), we can find the value of $P(t)$,
     \Rightarrow P(t) & = 1 - e^{-B_{12}\rho(\nu)t}
 \end{align}
 
-Thus, we have arrived at the equation for the probability of an atom undergoing stimulated absorption . \textbf{Note} that this has been derived under the assumption that no other interactions (such as stimulated emission or spontaneous emission) are taking place. In reality (e.g., in the lasing process), all three interactions (i.e. stimulated absorption, stimulated emission, and spontaneous emission) take place, so in such cases, we cannot apply this equation. \vspace{.2cm}
+Thus, we have arrived at the equation for the probability of an atom undergoing stimulated absorption . \textbf{Note} that this has been derived under the assumption that no other interactions (such as stimulated emission or spontaneous emission) are taking place. In reality (e.g., in the lasing process), all three interactions (i.e. stimulated absorption, stimulated emission, and spontaneous emission) take place when radiation of sufficient energy is incident on the system, so in such cases, we cannot apply this equation. \vspace{.2cm}
 
 Interactions like stimulated absorption usually occur almost instantly, so we can consider $t \rightarrow 0$. To simplify our equation further, we can use the limit $t \rightarrow 0$, for which we will divide our equation with $t$ first,
 
@@ -380,17 +381,17 @@ Usually, when applying limits, we have to apply it on both sides not just on one
 \end{note}
 
 By rearranging the terms in equation (15), we can arrive at,
-\begin{equation*}
+\begin{equation}
     B_{12} = \frac{P(t)}{\rho(\nu)t}
-\end{equation*}
+\end{equation}
 
-Thus, we can define $B_{12}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{1}$ absorb the incident radiation (of suitable energy) and get excited to $E_{2}$ in a system where no other interactions (processes) are taking place in a small interval of time. \vspace{.2cm}
+Thus, we can define $B_{12}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{1}$ absorb the incident radiation (of required energy) and get excited to $E_{2}$ in a system where no other interactions (processes) are taking place in a small interval of time. \vspace{.2cm}
 
 A lot of books or articles (like Wikipedia), refers Einstein coefficients as "probability" and by "probability", this is what they mean. Truly speaking, Einstein coefficients are more of rate constants (which we can see even in the differential equations) than probability. As the value of einstein coefficient increases, the rate increases and as the rate increases, more atoms excite from $E_{1}$ to $E_{2}$ so there are more chances for an atom in $E_{1}$ to undergo stimulated absorption thus affecting the value of probability. So, even in a system where all kind of interactions takes place, the einstein coefficient is related to probability but not linearly proportional as derived above under several assumptions.
 
 \subsubsection{Stimulated emission-only system}
 
-Let's take a system where only atoms undergo stimulated emission from $E_{2}$ to $E_{1}$ when a radiation of frequency $\nu$ is incident on it. \vspace{.2cm}
+Let's consider a system where only atoms undergo stimulated emission from $E_{2}$ to $E_{1}$ when a radiation of required energy is incident on it. \vspace{.2cm}
 
 In this system, let $P(t)$ be the probability of an atom to undergo stimulated emission from $E_{2}$ to $E_{1}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{2}$ state at time $t$ (i.e. not undergoing any transition). \vspace{.2cm}
 
@@ -418,15 +419,15 @@ As we are familiar with the math and the procedure, we can skip steps,
 \end{align*}
 
 Now, by rearranging the terms, we arrive at,
-\begin{equation*}
+\begin{equation}
     B_{21} = \frac{P(t)}{\rho(\nu)t}
-\end{equation*}
+\end{equation}
 
-Thus, we can define $B_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets stimulated by the incident radiation (of suitable energy) and get de-excited to $E_{1}$ emitting a radiation of an equal energy in a system where no other interactions (processes) are taking place in a small interval of time.
+Thus, we can define $B_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets stimulated by the incident radiation (of required energy) and get de-excited to $E_{1}$ emitting a radiation of an equal energy in a system where no other interactions (processes) are taking place in a small interval of time.
 
 \subsubsection{Spontaneous emission-only system}
 
-Let's take a system where only atoms undergo spontaneous emission from $E_{2}$ to $E_{1}$. In this system, let $P(t)$ be the probability of an atom to undergo spontaneous emission from $E_{2}$ to $E_{1}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{2}$ state at time $t$ (i.e. not undergoing any transition). \vspace{.2cm}
+Let's consider a system where only atoms undergo spontaneous emission from $E_{2}$ to $E_{1}$. In this system, let $P(t)$ be the probability of an atom to undergo spontaneous emission from $E_{2}$ to $E_{1}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{2}$ state at time $t$ (i.e. not undergoing any transition). \vspace{.2cm}
 
 Since spontaneous emission is a type of emission process similar to stimulated emission, with the key difference being that spontaneous emission does not require incident radiation to be stimulated and is thus independent of the spectral energy density of the incident radiation, we can modify the equation for the probability of stimulated emission by removing $\rho(\nu)$ and changing the Einstein coefficient $B_{21}$ to $A_{21}$. This modification yields the probability of spontaneous emission.
 \begin{align*}
@@ -438,15 +439,15 @@ Since spontaneous emission is a type of emission process similar to stimulated e
 \end{align*}
 
 Now, by rearranging the terms, we arrive at,
-\begin{equation*}
+\begin{equation}
     A_{21} = \frac{P(t)}{t}
-\end{equation*}
+\end{equation}
 
-Thus, we can define $A_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets de-excited to $E_{1}$ emitting a radiation (of a suitable energy) in a system where no other interactions (processes) are taking place in a small interval of time.
+Thus, we can define $A_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets de-excited to $E_{1}$ emitting a radiation (of a required energy) in a system where no other interactions (processes) are taking place in a small interval of time.
 
 \subsection{Relation between the Einstein Coefficients}
 
-Let's consider system having two energy levels (like we did earlier) i.e., $E_{1}$ (ground state) and $E_{2}$ (excited state). If radiation with energy equal to $\Delta E$ between the energy states, then, all the three kind of interactions between radiation and matter will happen. So, at any point of time $t$,
+Let's consider a system having two energy levels i.e., $E_{1}$ (ground state) and $E_{2}$ (excited state). If radiation with energy equal to $\Delta E$ between the energy states is incident on the system, then, all the three kind of interactions between radiation and matter will happen. So, at any point of time $t$,
 \begin{align}
     \text{Rate of change in} & = \text{Rate at which atoms} - \text{Rate at which atoms} \notag \\
     \text{no. of atoms in } E_{i} & \quad \text{ are excited from } E_{i} \quad \qquad \text{are de-excited to } E_{i} \notag \\
@@ -491,45 +492,70 @@ Now, compare this equation with Planck's law in equation (7), we get,
 
 \textbf{Note} that these relations are valid only under Thermodynamic Equilibrium conditions. \vspace{.2cm}
 
-Now, $B_{12}$ and $B_{21}$ are same (independent of directions), we can drop the subscript notation for the coefficients when discussing equilibrium conditions, i.e., $A$ is the Einstein coefficient for spontaneous process and $B$ is the Einstein coefficient for stimulated process. With this, we can make equation (13) look more simple,
+Now, $B_{12}$ and $B_{21}$ are same (independent of directions), we can drop the subscript notation for the coefficients when discussing equilibrium conditions, i.e., $A$ is the Einstein coefficient for spontaneous process $(A = A_{21})$ and $B$ is the Einstein coefficient for stimulated process $(B = B_{12} = B_{21})$. With this, we can make equation (21) look more simple,
 \begin{equation*}
     \rho(\nu) = \frac{A}{B} \frac{1}{e^{\frac{hf}{kT}} - 1}
 \end{equation*} 
 
-From (15), we can deduce that the probability of an atom in $E_{1}$ undergoing stimulated absorption is same as the probability of an atom in $E_{2}$ undergoing stimulated emission in equilibrium conditions. To put it simply, there is an equal probability for an atom to undergo stimulated emission or absorption by the incident radiation irrespective of its energy state under equilibrium conditions. \vspace{.2cm} 
+From (22), we can see that the rate constant of both stimulated emission and stimulated absorption becomes equal under equilibrium conditions. \vspace{.2cm} 
 
-From (14), we can get this proportional equation,
+From (23), we can get this proportional equation,
 \begin{equation*}
     \frac{A_{21}}{B_{21}} \propto \nu^{3}
 \end{equation*}
 
-Here, we can deduce that for atomic transitions involving radiations of lower frequencies, stimulated emissions are more probable $(A_{21} << B_{21})$ and for atomic transitions involving radiations of higher frequencies, spontaneous emissions are more probable $(A_{21} >> B_{21})$. Now, substituting (2) in that proportional equation gives us,
+Now, substituting (2) in that proportional equation gives us,
 \begin{equation}
     \frac{A_{21}}{B_{21}} \propto (\Delta E)^{3} \quad \because \nu = \frac{\Delta E}{h}
 \end{equation}
 
-From this, we can deduce that (same logic as earlier) if the energy difference between the energy levels is too low, it is more probable for the atom to undergo stimulated emission $(A_{21} << B_{21})$ and if the energy difference is too high, it is more probable for the atom to undergo spontaneous emission $(A_{21} >> B_{21})$. \vspace{.2cm}
+Here, we can deduce the following, 
 
-This makes sense because, the instability of an excited atom increases with energy (i.e. $\Delta E$) absorbed by it to get excited. The instability of an atom makes the atom to de-excite faster without any external aid to make itself stable which makes it probable for spontaneous emission to occur. \vspace{.2cm}
+\begin{block}
+    \textbf{1) If $\Delta E$ is very large,}
 
-To understand how high is considered high and how low is considered low, we can modify Planck's law in equation (7) by substituting equation (14) into it,
+    \begin{block}
+        Then, $A_{21} >> B_{21}$, this means that fewer atoms are de-excited by stimulated emission compared to spontaneous emission, as Einstein coefficients are rate constants. \vspace{.2cm}
+
+        Therefore, it is more probable for atoms in $E_{2}$ to de-excite spontaneously to $E_{1}$ rather than by stimulated emission. \vspace{.2cm}
+
+        As $B_{12} = B_{21}$, we can also say, $A_{21} >> B_{12}$, this means there will be more emissions (spontaneous) than absorptions.
+    \end{block} \vspace{.2cm}
+
+    \textbf{2) If $\Delta E$ is very small,}
+
+    \begin{block}
+        Then, $A_{21} << B_{21}$, this means that fewer atoms are de-excited by spontaneous emission compared to stimulated emission, as Einstein coefficients are rate constants. \vspace{.2cm}
+
+        Therefore, it is more probable for atoms in $E_{2}$ to de-excite by stimulated emission to $E_{1}$ rather than by spontaneous emission. \vspace{.2cm}
+
+        As $B_{12} = B_{21}$, we can also say, $A_{21} << B_{12}$, this means there will be more absorptions than emissions.
+    \end{block}
+\end{block} \vspace{.3cm}
+
+This makes sense because, the instability of an excited atom increases with energy (i.e. $\Delta E$) absorbed by it to get excited. The instability of an atom makes the atom to de-excite faster without any external aid to make itself stable which makes it probable for spontaneous emission to occur when $\Delta E$ is higher. \vspace{.2cm}
+
+To understand how high is considered high and how low is considered low, we can rearrange the terms in equation (21),
 \begin{align}
-    \rho(\nu) & = \frac{A_{21}}{B_{21}} \frac{1}{e^\frac{h\nu}{kT} - 1} \notag \\
+    \rho(\nu) & = \frac{A_{21}}{B_{21}} \frac{1}{e^\frac{h\nu}{kT} - 1} \quad \because \frac{B_{12}}{B_{21}} = 1 \notag \\
     \Rightarrow \rho(\nu) \frac{B_{21}}{A_{21}} & = \frac{1}{e^\frac{h\nu}{kT} - 1} \notag \\
     \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & = e^\frac{h\nu}{kT} - 1
 \end{align} \vspace{.2cm}
 
-From equation (17), we can get the idea of high and low,
-\begin{quote}
-    \textbf{1) If $\Delta E = h\nu >> kT$,}
-    \begin{align*}
-        e^{\frac{h\nu}{kT}} & >> 1 \\
-        \Rightarrow e^{\frac{h\nu}{kT}} - 1 & >> 1 \\
-        \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & >> 1 \\
-        \Rightarrow A_{21} & >> B_{21}
-    \end{align*}
+From this, we can get the idea of high and low,
+\begin{block}
+    \textbf{1) If $\Delta E >> kT$,}
 
-    Spontaneous emission becomes more probable than stimulated emission. \vspace{.2cm}
+    \begin{block}[left=1cm, top=-.5cm]
+        \begin{align*}
+            e^{\frac{h\nu}{kT}} & >> 1 \\
+            \Rightarrow e^{\frac{h\nu}{kT}} - 1 & >> 1 \\
+            \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & >> 1 \\
+            \Rightarrow A_{21} & >> B_{21}
+        \end{align*}
+
+        Spontaneous emission becomes more probable than stimulated emission.
+    \end{block} \vspace{.2cm}
 
     \textbf{2) If $\Delta E = h\nu << kT$,}
     \begin{align*}
@@ -539,9 +565,7 @@ From equation (17), we can get the idea of high and low,
     \end{align*}
 
     Stimulated emission becomes more probable than spontaneous emission.
-\end{quote}
-
-Note that if $A_{21}$ and $B_{21}$ becomes comparable, we cannot say which will be more probable as it will depend on the complete probability equation (and several factors) which we will be discussing after Quantum Physics.
+\end{block}
 
 \section{Production of Lasers}
 
