@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[a4paper, margin=0.5in]{geometry}
+\usepackage{comment}
+
+\usetikzlibrary{decorations.pathmorphing}
+\tikzset{snake it/.style={decorate, decoration=snake}}
+
+\begin{document}
+\begin{tikzpicture}
+
+\definecolor{atom_red}{HTML}{FF4500}
+
+\draw[thick] (0,3) -- (5,3);
+\draw[thick] (0,0) -- (5,0);
+
+\node at (5.5,3) {\textbf{\large $E_{2}$}};
+\node at (5.5,0) {\textbf{\large $E_{1}$}};
+\node at (8.5,1.5) {\textbf{\large $\Delta E$}};
+
+\draw[thick] (8,3) -- (8,0);
+\draw[thick] (7.7,3) -- (8.3,3);
+\draw[thick] (7.7,0) -- (8.3,0);
+
+\begin{comment}
+
+\draw[->, snake it, atom_red] (5,2.5) -- (7,2.5);
+\draw[->, snake it, atom_red] (5,2) -- (7,2);
+\draw[->, snake it, atom_red] (5,1.5) -- (7,1.5);
+\draw[->, snake it, atom_red] (5,1) -- (7,1);
+\draw[->, snake it, atom_red] (5,0.5) -- (7,0.5);
+
+\fill[atom_red!70] (4.5,0) circle (.2cm);
+\fill[atom_red!70] (3.5,0) circle (.2cm);
+\fill[atom_red!70] (2.5,0) circle (.2cm);
+\fill[atom_red!70] (1.5,0) circle (.2cm);
+\fill[atom_red!70] (0.5,0) circle (.2cm);
+
+\fill[white] (2.5,3) circle (.2cm);
+\draw[dashed] (2.5,3) circle (.2cm);
+
+\fill[white] (3.5,3) circle (.2cm);
+\draw[dashed] (3.5,3) circle (.2cm);
+
+\fill[white] (4.5,3) circle (.2cm);
+\draw[dashed] (4.5,3) circle (.2cm);
+
+\fill[white] (1.5,3) circle (.2cm);
+\draw[dashed] (1.5,3) circle (.2cm);
+
+\fill[white] (0.5,3) circle (.2cm);
+\draw[dashed] (0.5,3) circle (.2cm);
+
+\draw[thick, ->, >=latex] (0.5, 2.5) -- (0.5, 0.5);
+\draw[thick, ->, >=latex] (1.5, 2.5) -- (1.5, 0.5);
+\draw[thick, ->, >=latex] (2.5, 2.5) -- (2.5, 0.5);
+\draw[thick, ->, >=latex] (3.5, 2.5) -- (3.5, 0.5);
+\draw[thick, ->, >=latex] (4.5, 2.5) -- (4.5, 0.5);
+
+\node at (4.2, -1) {\textbf{\LARGE Atoms in Ground State}};
+
+\end{comment}
+
+% \begin{comment}
+
+\draw[->, snake it, atom_red] (-3,1.5) -- (-1,1.5);
+
+\node at (-2, 2) {\textbf{\large Incident Photon}};
+% \node at (-2, 1) {\textbf{\LARGE $\nu$}};
+
+\fill[atom_red!70] (4.5,3) circle (.2cm);
+\fill[atom_red!70] (3.5,3) circle (.2cm);
+\fill[atom_red!70] (2.5,3) circle (.2cm);
+\fill[atom_red!70] (1.5,3) circle (.2cm);
+\fill[atom_red!70] (0.5,3) circle (.2cm);
+
+\node at (2.5, 4) {\textbf{\LARGE Atoms in Excited State}};
+
+% \end{comment}
+
+\end{tikzpicture}
+\end{document}

@@ -8,8 +8,20 @@
 \usepackage{anysize}
 \usepackage{caption}
 \usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage{ulem}
+
+\titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
+
+\titlespacing*{\subsubsection}{0pt}{.8em}{.3em}
+
+\renewcommand{\ULthickness}{1pt}
+\renewcommand{\ULdepth}{0.5ex}  
 
 \begin{document}
+  
 
 \fontsize{14}{16}
 \selectfont
@@ -25,13 +37,13 @@
 
 \section{Introduction}
 
-LASER means \textbf{Light Amplification by Stimulated Emission of Radiation}. To understand the mechanism of Laser, one has to understand the concept of Energy levels (which will be studied later in Quantum Field theory).
+In this chapter, we will explore how lasers work. However, before understanding the mechanism of lasers, we need to learn about the concept of energy levels, the interaction between radiation and matter, population distribution, Einstein coefficients, and more.
 
 \subsection{Energy Level}
 
 An energy level is a specific, quantized state that an $e^{-}$ can occupy in an atom or molecule, each with a fixed energy value. We will be studying about these energy levels in depth when we will be learning Quantum Physics. \vspace{.2cm}
 
-\textbf{What does an atom getting excited mean?} An atom getting excited means that the atom has gained some energy (relative to its ground state). When an electron of the atom get excited, it gains energy and as an electron is part of an atom, so the atom too does gain energy. From whatever we know till now, when a photon is absorbed by an atom, it is more accurate to say that the electron has been excited. But, in this chapter, we will often keep atom as our point of reference. So, whenever we say that an atom has been excited, we refer to excitation of the outermost valence shell electron. Refer to Born-Oppenheimer approximation for a better idea on how nucleus of an atom is not affected when the photon is absorbed by the atom.
+\uline{What does an atom getting excited mean?} An atom getting excited means that the atom has gained some energy (relative to its ground state). When an electron of the atom get excited, it gains energy and as an electron is part of an atom, so the atom too does gain energy. From whatever we know till now, when a photon is absorbed by an atom, it is more accurate to say that the electron has been excited. But, in this chapter, we will often keep atom as our point of reference. So, whenever we say that an atom has been excited, we refer to excitation of the outermost valence shell electron. Refer to Born-Oppenheimer approximation for a better idea on how nucleus of an atom is not affected when the photon is absorbed by the atom.
 
 \begin{quote}
     If an electron has been excited, then the atom too gets excited but if an atom has been excited, there are many possibilities. But, in this chapter, we will be only considering the excitation of the outermost valence shell electron as the only possibility.
@@ -539,10 +551,11 @@ To understand how high is considered high and how low is considered low, we can 
 \begin{align}
     \rho(\nu) & = \frac{A_{21}}{B_{21}} \frac{1}{e^\frac{h\nu}{kT} - 1} \quad \because \frac{B_{12}}{B_{21}} = 1 \notag \\
     \Rightarrow \rho(\nu) \frac{B_{21}}{A_{21}} & = \frac{1}{e^\frac{h\nu}{kT} - 1} \notag \\
-    \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & = e^\frac{h\nu}{kT} - 1
+    \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & = e^\frac{h\nu}{kT} - 1 \notag \\
+    \Rightarrow \frac{1}{\rho(\nu)} \frac{A_{21}}{B_{21}} & = e^\frac{\Delta E}{kT} - 1 \quad \because \Delta E = h\nu
 \end{align} \vspace{.2cm}
 
-From this, we can get the idea of high and low,
+From this, we can get the idea of how high is considered as high and how low is considered as low,
 \begin{block}
     \textbf{1) If $\Delta E >> kT$,}
 
@@ -554,19 +567,80 @@ From this, we can get the idea of high and low,
             \Rightarrow A_{21} & >> B_{21}
         \end{align*}
 
-        Spontaneous emission becomes more probable than stimulated emission.
-    \end{block} \vspace{.2cm}
+        Spontaneous emission becomes more probable than stimulated emission. Thus, when we state $\Delta E$ is very large, it follows that $\Delta E >> kT$. 
+    \end{block}
 
-    \textbf{2) If $\Delta E = h\nu << kT$,}
-    \begin{align*}
-        e^{\frac{h\nu}{kT}} & << 1 \\
-        \Rightarrow e^{\frac{h\nu}{kT}} - 1 & << 1 \\
-        \Rightarrow A_{21} & << B_{21}
-    \end{align*}
+    \textbf{2) If $\Delta E << kT$,}
 
-    Stimulated emission becomes more probable than spontaneous emission.
+    \begin{block}[left=1cm, top=-.5cm]
+        \begin{align*}
+            e^{\frac{h\nu}{kT}} & << 1 \\
+            \Rightarrow e^{\frac{h\nu}{kT}} - 1 & << 1 \\
+            \Rightarrow A_{21} & << B_{21}
+        \end{align*}
+    
+        Stimulated emission becomes more probable than spontaneous emission. Thus, when we state $\Delta E$ is very small, it follows that $\Delta E << kT$. 
+    \end{block}
 \end{block}
 
 \section{Production of Lasers}
+
+From here on, we will understand how a laser works and how it is constructed, using the concepts we have studied so far in the chapter.
+
+\subsection{What is LASER?}
+
+Laser (or LASER) is an abbreviation for \textbf{Light Amplification by Stimulated Emission of Radiation}. As the name suggests, laser is achieved by amplification of light by stimulated emission. \vspace{.2cm}
+
+\uline{How is amplification of light achieved by stimulated emission?} When we studied about Stimulated Emission, we know than an excited atom gets stimulated by the incident radiation (of required energy) and de excites to the ground state by emitting another incident radiation which travels in the same direction and is in the same phase with the incident radiation. But, what if there are many atoms in an excited state?
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.78]{./img/07_amplification.png}
+    \caption{Stimulated emission from multiple excited atoms in an energy level diagram.}
+\end{figure}
+
+The incident photon stimulates the first excited atom, resulting in two in-phase photons traveling in the same direction. These two photons then stimulate two other excited atoms, resulting in four in-phase photons travelling in the same direction. These four photons stimulate four more excited atoms, resulting in eight in-phase photons travelling in the same direction, and so on, creating a chain reaction and a bunch of photons traveling in the same direction resulting in the amplification of light. \vspace{.3cm}
+
+Although this may sound simple, there is a lot going on in reality that we need to take into account. Starting with the fact that the diagrammatic representation of this process in Figure (7) is only from the perspective of energy levels (i.e., energy level diagrams), as we have already discussed, these atoms are actually scattered throughout the system. Therefore, achieving unidirectional, highly collimated, monochromatic, coherent light (i.e., laser light) in reality requires a great deal of work in the construction of a laser.
+
+\subsection{Construction of a Laser}
+
+\subsubsection{Population Inversion}
+
+We learnt that in a system under Thermodynamic equilibrium, there are more atoms in the ground state than in the excited state (according to Boltzmann's law). But to amplify light through stimulated emission, we need more atoms in the excited state to make it more probable for photons to find its way to an excited atom and amplify the radiation. \vspace{.2cm}
+
+\uline{Why do we have to make it more probable for photons to stimulate the atoms?} Because, if not, photons will take a lot of time to find excited atoms and stimulate it resulting in a very low intensity laser beam (which we are not interested in). \vspace{.2cm}
+
+So, we have to make the system to undergo non equilibrium conditions by supplying energy to the system (uniformly for better output) from an external source. This process is called as \textbf{Pumping}. \vspace{.2cm}
+
+The supplied energy excites alot of atoms in the ground state to the excited state thus making more atoms to be in excited state than in the ground state resulting in a \textbf{Population Inversion}. This makes it more probable for the photons to find the excited atoms and amplify the radiation more. \vspace{.2cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{./img/10_population_inversion.png}
+    \caption{System under equilibrium (a) and System after population inversion (b)}
+\end{figure}
+
+\subsubsection{Metastable states}
+
+When an atom excites to an excited state, it becomes very unstable and tends to de-excite spontaneously (almost instantly). The average time for which an atom remains in an excited state is $10^{-8}\,\text{s}$, after which it de-excites spontaneously. This is a problem because the atom gets de-excited spontaneously before even the photon reaches the atom to de-excite it through stimulation and amplify the radiation.
+\vspace{.2cm}
+
+There are certain exceptional energy states in certain elements where the average time taken for an atom to remain in those energy states are as high as $10^{-3}s$ which is large enough (compared to $10^{-8}s$) for photons to excite it through stimulation.
+
+\vspace{.2cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.9]{./img/09_active_medium.png}
+    \caption{Simple diagrammatic representation of Laser}
+\end{figure}
+
+% \textbf{Characterstics of Lasers:}
+
+% \begin{itemize}
+    % \item \textbf{Directionality:} As all these photons travel in the same direction, it results in a highly collimated beam of light.
+    % \item \textbf{Monochromaticity:} The photon emitted and photon which stimulates will be of same energy, i.e. $\Delta E$ between the excited and the ground state. As the energy will be same, so will be its frequency and wavelength $(\Delta E = h\nu = hc/\lambda)$ resulting in highly collimated monochromatic beam of light. 
+% \end{itemize}
 
 \end{document}
