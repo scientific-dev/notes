@@ -605,13 +605,24 @@ Although this may sound simple, there is a lot going on in reality that we need 
 
 \subsection{Construction of a Laser}
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.9]{./img/09_active_medium.png}
+    \caption{Simple diagrammatic representation of Laser}
+\end{figure}
+
+This diagram shows a very simplistic model of a LASER based on the very first lasers humans built. In this diagram, the \textbf{Active medium} (or \textbf{Gain medium}) is where the lasing process takes place. \vspace{.2cm}
+
+Anyway, at present, the modern lasers available are very compact and use several methods to improve efficiency but the fundamental principles of lasing process used in the very first lasers are still used.
+
 \subsubsection{Population Inversion}
 
 We learnt that in a system under Thermodynamic equilibrium, there are more atoms in the ground state than in the excited state (according to Boltzmann's law). But to amplify light through stimulated emission, we need more atoms in the excited state to make it more probable for photons to find its way to an excited atom and amplify the radiation. \vspace{.2cm}
 
 \uline{Why do we have to make it more probable for photons to stimulate the atoms?} Because, if not, photons will take a lot of time to find excited atoms and stimulate it resulting in a very low intensity laser beam (which we are not interested in). \vspace{.2cm}
 
-So, we have to make the system to undergo non equilibrium conditions by supplying energy to the system (uniformly for better output) from an external source. This process is called as \textbf{Pumping}. \vspace{.2cm}
+So, we have to make the system (i.e. active medium in the laser) to undergo non equilibrium conditions by supplying energy (represented by green arrows in Figure (8)) to the system from an external source. This process is called as \textbf{Pumping}. \vspace{.2cm}
 
 The supplied energy excites alot of atoms in the ground state to the excited state thus making more atoms to be in excited state than in the ground state resulting in a \textbf{Population Inversion}. This makes it more probable for the photons to find the excited atoms and amplify the radiation more. \vspace{.2cm}
 
@@ -626,21 +637,16 @@ The supplied energy excites alot of atoms in the ground state to the excited sta
 When an atom excites to an excited state, it becomes very unstable and tends to de-excite spontaneously (almost instantly). The average time for which an atom remains in an excited state is $10^{-8}\,\text{s}$, after which it de-excites spontaneously. This is a problem because the atom gets de-excited spontaneously before even the photon reaches the atom to de-excite it through stimulation and amplify the radiation.
 \vspace{.2cm}
 
-There are certain exceptional energy states in certain elements where the average time taken for an atom to remain in those energy states are as high as $10^{-3}s$ which is large enough (compared to $10^{-8}s$) for photons to excite it through stimulation.
+There are certain exceptional energy states in certain elements where the average time taken for an atom to remain in those energy states are as high as $10^{-3}s$ which is large enough (compared to $10^{-8}s$) for photons to excite it through stimulation. Theses states are called as \textbf{Metastable states}. \vspace{.2cm} 
 
-\vspace{.2cm}
+This is why active medium in the lasers consists of atoms or ions with such exceptional \textbf{Metastable states} to absorb energy and undergo stimulated emission which increases the output of the laser beam by being excited for long time and making it more probable for a photon to stimulate an excited atom.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=.9]{./img/09_active_medium.png}
-    \caption{Simple diagrammatic representation of Laser}
-\end{figure}
+\subsubsection{Directionality and Coherence}
 
-% \textbf{Characterstics of Lasers:}
+One of the most important aspect of laser is that how it's beam is highly collimated and coherent. This is achieved by the way how lasers are constructed. \vspace{.2cm}
 
-% \begin{itemize}
-    % \item \textbf{Directionality:} As all these photons travel in the same direction, it results in a highly collimated beam of light.
-    % \item \textbf{Monochromaticity:} The photon emitted and photon which stimulates will be of same energy, i.e. $\Delta E$ between the excited and the ground state. As the energy will be same, so will be its frequency and wavelength $(\Delta E = h\nu = hc/\lambda)$ resulting in highly collimated monochromatic beam of light. 
-% \end{itemize}
+When pumping takes place, alot of atoms in the active medium gets excited. Initially, there will not be many photons in the active medium to start the chain of stimulated emission so few excited atoms in the active medium have to undergo spontaneous emission releasing photons. We know, in spontaneous emissions, photons are emitted in various directions. But, we need our laser beam to be highly collimated so we have to filter out photons which are not travelling parallel the axis of the active medium. \vspace{.2cm}
+
+If you observe Figure 8, the active medium is enclosed by two mirrors on either side, with its length exposed. Photons that do not travel parallel to the axis of the active medium undergo several reflections between the mirrors and eventually escape the medium. In contrast, photons traveling parallel to the axis remain perpendicular to the mirrors. Even after multiple reflections, they stay in the same line, allowing only the photons traveling parallel to the axis to remain within the active medium.
 
 \end{document}
