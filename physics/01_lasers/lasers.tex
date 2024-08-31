@@ -641,12 +641,51 @@ There are certain exceptional energy states in certain elements where the averag
 
 This is why active medium in the lasers consists of atoms or ions with such exceptional \textbf{Metastable states} to absorb energy and undergo stimulated emission which increases the output of the laser beam by being excited for long time and making it more probable for a photon to stimulate an excited atom.
 
-\subsubsection{Directionality and Coherence}
+\subsubsection{Formation of Standing Waves}
 
 One of the most important aspect of laser is that how it's beam is highly collimated and coherent. This is achieved by the way how lasers are constructed. \vspace{.2cm}
 
-When pumping takes place, alot of atoms in the active medium gets excited. Initially, there will not be many photons in the active medium to start the chain of stimulated emission so few excited atoms in the active medium have to undergo spontaneous emission releasing photons. We know, in spontaneous emissions, photons are emitted in various directions. But, we need our laser beam to be highly collimated so we have to filter out photons which are not travelling parallel the axis of the active medium. \vspace{.2cm}
+When pumping takes place, alot of atoms in the active medium gets excited. Initially, there will not be many photons in the active medium to start the chain of stimulated emission so few excited atoms in the active medium have to undergo spontaneous emission releasing photons. We know, in spontaneous emissions, there is no phase relationship between the absorbed and emitted radiation so the photons are emitted in various directions. But, we need our laser beam to be highly collimated so we have to filter out photons which are not travelling parallel the axis of the active medium. \vspace{.2cm}
 
-If you observe Figure 8, the active medium is enclosed by two mirrors on either side, with its length exposed. Photons that do not travel parallel to the axis of the active medium undergo several reflections between the mirrors and eventually escape the medium. In contrast, photons traveling parallel to the axis remain perpendicular to the mirrors. Even after multiple reflections, they stay in the same line, allowing only the photons traveling parallel to the axis to remain within the active medium.
+If you observe Figure (8), the active medium is enclosed by two mirrors on either side, with its length exposed. Photons that do not travel parallel to the axis of the active medium undergo several reflections between the mirrors and eventually escape the medium. In contrast, photons traveling parallel to the axis remain perpendicular to the mirrors. Even after multiple reflections, they stay in the same line, allowing only the photons traveling parallel to the axis to remain within the active medium.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.6]{./img/12_filtration.png}
+    \caption{Filtration of photons which are not travelling parallel to the axis.}
+\end{figure}
+
+Once the filtration is done, photons which are travelling along the direction of the axis will be only left. From there onwards, those photons start the chain process of stimulated emissions. We know, in stimulated emission, there is a phase relationship with the stimulated and emitted photon so the photons which are emitted from the stimulated emissions therafter will also be travelling parallel to the principal axis thus making the beam highly collimated. \vspace{.2cm}
+
+Now, with the filtration being done, the photons only travel parallel to the axis but they still have the freedom to move either in left to right or right to left. So, it is very much probable that a photon meets another photon in the same path but from the opposite direction resulting in an interference of waves. \vspace{.2cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{./img/13_meeting_waves.png}
+    \caption{Two photons meeting along the same line}
+\end{figure}
+
+This interference can be either constructive or destructive. We are interested in a laser beam with maximum intensity, so we will be only considering the case of constructive interference. We know, when waves from two opposite directions constructively interfere, it results in \textbf{Standing Waves}. Similarly, these photons constructively interfere and result in standing waves. Here, the active medium having mirrors on both of its sides acts like a closed organ pipe. So, we can simply apply the formula of closed organ pipe, \vspace{.2cm}
+
+\begin{equation}
+    L = n\frac{\lambda}{2}, \quad n \in \mathbb{N}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{./img/14_standing_waves.png}
+    \caption{Standing waves in the active medium}
+\end{figure}
+
+Note that the diagrammatic representation of waves in this figure (or any figure in this chapter) is for convenience in illustrating the concept. They don't actually span across the active medium or represent physical waves but are instead a mathematical tool (wave equation) used to understand their behavior. \vspace{.2cm}
+
+\uline{Are photons particles or waves?} In this chapter, we focus solely on the wave nature of photons (probabilistic), rather than their particle nature. \uline{Why?} In phenomena such as lasers, photons exhibit wave-like behavior, making it convenient to model them as waves for mathematical analysis. For example, if we keep the wavelength of photons in the active medium, \(\lambda\), constant and vary the length of the active medium, \(L\), we observe changes in intensity due to interference effects (see Equation (26)). Thus, for these cases, it is simpler to perform calculations by assuming photons as waves.
+\vspace{.2cm}
+
+With more and more interference with photons, the standing wave amplifies (i.e. amplitude increases). Given, there is a finite amount of excited atoms, it will reach a saturation point at some point of time. \vspace{.2cm}
+
+\uline{How do we emit our standing wave as laser beam?} Although, we did say there are mirrors on both the side of the active medium. Only one of them is 100\% reflecting (left one in Figure (8)) while the other one is 99\% reflexting (right one in Figure (8)), i.e. only 1\% of light incident on that mirror is actually emitted as laser beam while the remaining 99\% is used to maintain standing wave and amplify itself. \vspace{.2cm}
+
+Also, note that there will be no one big standing wave in the  as illustrated in Figure (12), there will be multiple standing wave across each possible path parallel to the axis which are emitted together from the partially reflecting mirror. Unlike in Figure (8), the laser beam output will be all area of the cross section of the active medium. From this, we can understand that, to keep the laser beam more thin, we have to reduce the radius of the active medium.
 
 \end{document}
