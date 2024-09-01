@@ -79,6 +79,29 @@ Now, if we follow the quantum mechanical model, representing orbitals in an atom
 
 This energy level diagram helps use to visualise in which energy state the atom (or its outermost valence shell $e^{-}$) is in without violating any idea of quantum mechanical model of an atom. Compare figure 2 with figure 1.
 
+\subsection{Wave nature of Photons}
+
+In this chapter, we will only deal with wave nature of Photons. Because in phenomena like lasers, it is observed that photons behave like waves. By waves, do not confuse it with a physical mechanical wave but they are just electromagnetic waves. For the sake of representation, we will represent the wave nature of Photons as wavy arrow (see in Figure (3)). \vspace{.2cm}
+
+\uline{What is the difference between Photon and Radiation?} Radiation is a broader term that encompasses the emission and transmission of energy, either as waves or as particles. Radiations can be of many types like electromagnetic, thermal, etc. While, Photons are specific quantum (individual element) of an electromagnetic radiation. \vspace{.2cm}
+
+To put it simply, "electromagnetic radiation" is made up of discrete energy quantums called as "photons" just like how "matter" is made up of discrete units called as "atoms". \vspace{.2cm}
+
+Using \textbf{Planck's formula}, we can determine the energy \(E\) of a photon from its frequency \(\nu\), \vspace{.2cm}
+\begin{equation}
+    E = h\nu
+\end{equation} \vspace{.2cm}
+
+The energy of an electromagnetic radiation will be the sum of the energies of all photons in the radiation. But, if we assume the electromagnetic radiation having $n$ photons has an uniform isotropic frequency $\nu$, i.e. all photons in the radiation has frequency $\nu$ independent of directions,
+\begin{align}
+    E_{\text{radiation}} &= h\nu + h\nu + h\nu + ... \text{ (n times)} \notag \\
+    \Rightarrow E_{\text{radiation}} &= nh\nu
+\end{align}
+
+In reality, for any radiation, there will be slight variations in frequency among its photons, making this formula somewhat impractical. Therefore, for radiation with a frequency \(\nu\), the photons will have frequencies ranging from \(\nu\) to \(\nu + d\nu\) (where \(d\nu\) represents the slight variation in frequency). By plotting this as a distribution, we may obtain a more accurate formula for the energy of the radiation (we will deal with this in later chapters). \vspace{.2cm}
+
+Also, in this chapter, unless and until specified, by "radiation", we mean "electromagnetic radiation". We will be using the term "radiation" when we are talking about the system or the matter as whole while "photon" when we are talking about the "atom" alone.
+
 \subsection{References}
 
 \begin{itemize}
@@ -91,7 +114,7 @@ This page has to be updated once we complete studying Quantum Physics and its me
 
 \section{Types of Interactions}
 
-Working of laser depends on the three different ways of interaction of radiation and matter. In this chapter, there will only be an introduction to the interactions and will study them later in depth in Quantum Mechanics. \textbf{Note} that these interactions happen only in isolated atoms with discrete $E$ levels.
+Working of laser depends on the three different ways of interaction of radiation (photons) and matter (atoms). In this chapter, there will only be an introduction to the interactions and will study them later in depth in Quantum Mechanics. \textbf{Note} that these interactions happen only in isolated atoms with discrete $E$ levels.
 
 \subsection{Stimulated Absorption}
 
@@ -111,9 +134,9 @@ Here (and for the other 2 interactions too), assume $E_{1}$ is the ground state 
 
 \textbf{Note} although $E_{1}$ will be greater than $E_{2}$ in magnitude but their values are in negative thus making the $\Delta E$ positive. \vspace{.2cm}
 
-Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, by \textbf{Planck's formula}.
+Here, the photon is absorbed by the atom to excite itself from the ground state to an excited state. This is only possible if the energy of photon is same as the energy different between two levels. So, from Planck's law in Equation (1), we get,
 \begin{equation}
-    \Delta E = h\nu
+    \Delta E = E_{\text{photon}} = h\nu
 \end{equation}
 
 \subsection{Spontaneous Emission}
@@ -159,7 +182,7 @@ Let's consider a system having energy states $E_{1}$, $E_{2}$, ..., $E_{i}$. Let
     n_{1} + n_{2} + ... + n_{i} = n
 \end{equation}
 
-We can differentiate this equation (w.r.t $t$) to get a relation between the rate of atoms exciting and de-exciting in each energy state,
+We can differentiate this Equation (w.r.t $t$) to get a relation between the rate of atoms exciting and de-exciting in each energy state,
 
 \begin{equation*}
     \frac{dn_{1}}{dt} + \frac{dn_{2}}{dt} + ... + \frac{dn_{i}}{dt} = \frac{dn}{dt}
@@ -200,7 +223,7 @@ The derivation of this equation is given \href{https://www.phys.ufl.edu/~meisel/
 
 \subsection{Non Thermodynamic Equilibrium Conditions}
 
-We know in energy level scheme, $E_{2} > E_{1}$. By substituting this inequality in Boltzmann's equation in (6), we get $n_{2} < n_{1}$. If we place the system at a very huge temperature (i.e. $T \rightarrow \infty$ but in equilibrium), then from equation (6), we get $n_{2} \rightarrow n_{1}$. \vspace{.2cm}
+We know in energy level scheme, $E_{2} > E_{1}$. By substituting this inequality in Boltzmann's equation in (8), we get $n_{2} < n_{1}$. If we place the system at a very huge temperature (i.e. $T \rightarrow \infty$ but in equilibrium), then from Equation (8), we get $n_{2} \rightarrow n_{1}$. \vspace{.2cm}
 
 As Boltzmann's equation is only valid at Thermodynamic Equilibrium, we can say $n_{2}$ is always lesser than or equal to $n_{1}$ (i.e $n_{2} \le n_{1}$) under Thermodynamic Equilibrium. In short, $n_{2}$ can never be greater than $n_{1}$ under Thermodynamic Equilibrium conditions. 
 \begin{equation*}
@@ -219,9 +242,15 @@ Read more about this \href{https://en.wikipedia.org/wiki/Einstein_coefficients}{
 
 \subsection{Spectral Energy Density}
 
-Let radiation of continous spectrum of frequencies be incident on the system. Let $\rho(\nu)d\nu$ be the energy incident per unit volume (i.e. energy density) of the radiations having frequencies between $\nu$ and $\nu + d\nu$ in the spectrum. Here, $\rho(\nu)$ is called as spectral energy density (having dimensions of $E/A\nu$) which is the energy density per frequency of radiations having frequencies between $\nu$ and $\nu + d\nu$. \vspace{.2cm}
+For a radiation of continous spectrum of frequencies ranging from $v_{min}$ to $v_{max}$, let $\rho(\nu)d\nu$ be the energy incident per unit volume (i.e. energy density) of the radiations having frequencies between $\nu$ and $\nu + d\nu$ in the spectrum. \vspace{.2cm}
 
-Also, in some books (like in Basavaraju's), this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \textbf{Note} that, this parameter is independent of direction of radiation as we have assumed isotropic frequencies. \vspace{.2cm}
+Here, $\rho(\nu)$ is called as spectral energy density (having dimensions of $E/A\nu$) which is the energy density per frequency of radiations having frequencies between $\nu$ and $\nu + d\nu$. In some books (like Basavaraju's), this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \vspace{.2cm}
+
+We already discussed about how the frequencies of photons vary with small values $d\nu$ in a radiation of frequency $\nu$ in Subsection (1.5). With this parameter, we can take account for the variation and find the total energy of the radiation more accurately than in Equation (2),
+
+\begin{equation}
+    E_{\text{radiation}} = \text{Volume } \times \text{ } \int_{\nu_{min}}^{\nu_{max}} \rho(\nu) d\nu
+\end{equation} \vspace{.2cm}
 
 According to \textbf{Planck's law}, the spectral energy density is given as,
 
@@ -229,7 +258,7 @@ According to \textbf{Planck's law}, the spectral energy density is given as,
     \rho(\nu) = \frac{8\pi h\nu^3}{c^3} \frac{1}{e^\frac{h\nu}{kT} - 1}
 \end{equation}
 
-We will study about this law later in Quantum Physics.
+We can substitute this into Equation (10) and get a complete equation for the $E_{\text{radiation}}$ but, we will deal with that later in Quantum Physics.
 
 \subsection{Description of Einstein's coefficients}
 
@@ -237,7 +266,7 @@ Let's consider two energy levels $E_{1}$ (ground state) and $E_{2}$ (some excite
 
 \subsubsection{Stimulated Absorption}
 
-In this process, the atoms excite from $E_{1}$ to $E_{2}$ due to the incident radiation of frequency $\nu$. To measure the rate of this process (and for the others too), we will consider $E_{1}$ (ground state) and its population density $n_{1}$ as reference, i.e.,
+In this process, the atoms excite from $E_{1}$ to $E_{2}$ due to the incident photon of frequency $\nu$. To measure the rate of this process (and for the others too), we will consider $E_{1}$ (ground state) and its population density $n_{1}$ as reference, i.e.,
 \begin{align*}
     \text{Rate of stimulated} & = \text{Rate at which atoms are undergoing stimulated} \\
     \text{absorption} & \quad \text{absorption from } E_{1} \text{ to } E_{2} \\ 
@@ -250,7 +279,7 @@ And, from experiments, we know,
     (\frac{dn_{1}}{dt})_{st.a.} \propto -n_{1}\rho(\nu)
 \end{align*}
 
-As atoms excite from $E_{1}$ to $E_{2}$, it results in decrease in $n_{1}$ (and increase in $n_{2}$) which explains the negative sign. The rate of stimulated absorption will be more if there are more atoms in the ground state $E_{1}$ to get excited to $E_{2}$ so the rate depends on $n_{1}$. This points out the fact that the rate of stimulated absorption will decrease as more and more atoms in $E_{1}$ get excited. Also, as this process is initiated by the energy of the incident radiation, it also depends on the spectral energy density of it. \vspace{.2cm}
+As atoms excite from $E_{1}$ to $E_{2}$, it results in decrease in $n_{1}$ (and increase in $n_{2}$) which explains the negative sign. The rate of stimulated absorption will be more if there are more atoms in the ground state $E_{1}$ to get excited to $E_{2}$ so the rate depends on $n_{1}$. This points out the fact that the rate of stimulated absorption will decrease as more and more atoms in $E_{1}$ get excited. Also, as this process is initiated by the energy of the incident photon, it also depends on the spectral energy density of it. \vspace{.2cm}
 
 The proportional constant for the equation is the Einstein coefficient $B_{12}$ $[m^{3}J^{-1}s^{-2}]$ where $12$ indicates the direction of process (i.e. $E_{1}$ to $E_{2}$) and $B$ indicates the process is stimulated (induced). After plugging the Einstein coefficient in the proportional equation, we get,
 
@@ -258,7 +287,7 @@ The proportional constant for the equation is the Einstein coefficient $B_{12}$ 
     (\frac{dn_{1}}{dt})_{st.a.} = -B_{12}n_{1}\rho(\nu) 
 \end{equation}
 
-To find the rate at which the atoms are getting excited to $E_{2}$ by stimulated absorption, we can substitute the above rate in the equation (4),
+To find the rate at which the atoms are getting excited to $E_{2}$ by stimulated absorption, we can substitute the above rate in the Equation (6),
 
 \begin{equation*}
     (\frac{dn_{2}}{dt})_{st.a.} = -(\frac{dn_{1}}{dt})_{st.a.} = B_{12}n_{1}\rho(\nu)
@@ -279,18 +308,18 @@ And, from experiments, we know,
     (\frac{dn_{1}}{dt})_{sp.e.} \propto n_{2}
 \end{align*}
 
-As atoms de-excite from $E_{2}$ to $E_{1}$, there will be an increase in $n_{1}$ (and decrease in $n_{2}$) which explains why it has no negative sign. The rate of spontaneous emission will be more if there are more excited atoms in $E_{2}$ (i.e. $n_{2}$) to get de-excited spontaneously, so the rate depends on $n_{2}$. As this process is independent of any external aid (i.e. no incident radiation like in stimulated absorption), the rate is independent of spectral energy density. \vspace{.2cm}
+As atoms de-excite from $E_{2}$ to $E_{1}$, there will be an increase in $n_{1}$ (and decrease in $n_{2}$) which explains why it has no negative sign. The rate of spontaneous emission will be more if there are more excited atoms in $E_{2}$ (i.e. $n_{2}$) to get de-excited spontaneously, so the rate depends on $n_{2}$. As this process is independent of any external aid (i.e. no incident photon like in stimulated absorption), the rate is independent of spectral energy density. \vspace{.2cm}
 
 The proportional constant for the equation is the Einstein coefficient $A_{21}$ $[s^{-1}]$ where $21$ indicates the direction of process (i.e. $E_{2}$ to $E_{1}$) and $A$ indicates the process is spontaneous. After plugging the Einstein coefficient in the proportional equation, we get,
 \begin{equation}
     (\frac{dn_{1}}{dt})_{sp.e.} = A_{21}n_{2}
 \end{equation}
 
-We can get the rate of this emission keeping $E_{2}$ as our reference by applying equation (4) like we did earlier in stimulated absorption.
+We can get the rate of this emission keeping $E_{2}$ as our reference by applying Equation (6) like we did earlier in stimulated absorption.
 
 \subsubsection{Stimulated Emission}
 
-In this process, the atoms de-excite from $E_{2}$ to $E_{1}$ due to incident of radiation of frequency $\nu$. Taking $E_{1}$ (ground state) as our reference like we did earlier.
+In this process, the atoms de-excite from $E_{2}$ to $E_{1}$ due to incident of photon of frequency $\nu$. Taking $E_{1}$ (ground state) as our reference like we did earlier.
 \begin{align*}
     \text{Rate of stimulated} & = \text{Rate at which atoms are undergoing stimulated} \\
     \text{emission} & \quad \text{emission from } E_{2} \text{ to } E_{1} \\ 
@@ -310,20 +339,20 @@ The proportional constant for the equation is the Einstein coefficient $B_{21}$ 
     (\frac{dn_{1}}{dt})_{sp.e.} = B_{21}n_{2}\rho(\nu)
 \end{equation}
 
-Again, we can get the rate of this emission keeping $E_{2}$ as our reference by applying equation (4) like we did earlier in stimulated absorption.
+Again, we can get the rate of this emission keeping $E_{2}$ as our reference by applying Equation (6) like we did earlier in stimulated absorption.
 
 \subsection{Probability aspect of Einstein Coefficients}
 
 \subsubsection{Stimulated absorption-only system}
 
-Let's consider a system where atoms only undergo stimulated absorption (no stimulated emission or spontaneous emission) from its $E_{1}$ state to $E_{2}$ state when a radiation of required energy is incident on it. \vspace{.2cm}
+Let's consider a system where atoms only undergo stimulated absorption (no stimulated emission or spontaneous emission) from its $E_{1}$ state to $E_{2}$ state when a photon of required energy is incident on it. \vspace{.2cm}
 
 In that system, let $P(t)$ be the probability of an atom to undergo stimulated absorption from $E_{1}$ to $E_{2}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{1}$ state at time $t$ (i.e. not undergoing any transition), \vspace{.2cm}
 \begin{equation}
     P(t) + P^c(t) = 1
 \end{equation}
 
-As more and more atoms in $E_{1}$ undergo stimulated absorption to $E_{2}$, the population density $n_{1}$ decreases which means an atom in $E_{1}$ state has more chances (i.e. probability) to absorb the incident radiation and get excited to $E_{2}$. One can imagine it like this: if the supplies are fixed and the number of people in the crowd is decreasing, then it becomes more probable for each person in the crowd to obtain a supply. This explains why is the probability of an atom getting excited or not is a function of time $t$ (i.e. dependent on time $t$). \vspace{.2cm}
+As more and more atoms in $E_{1}$ undergo stimulated absorption to $E_{2}$, the population density $n_{1}$ decreases which means an atom in $E_{1}$ state has more chances (i.e. probability) to absorb the incident photon and get excited to $E_{2}$. One can imagine it like this: if the supplies are fixed and the number of people in the crowd is decreasing, then it becomes more probable for each person in the crowd to obtain a supply. This explains why is the probability of an atom getting excited or not is a function of time $t$ (i.e. dependent on time $t$). \vspace{.2cm}
 
 We can define the probability of an atom to remain in the same state (i.e. $P^c(t)$) as,
 \begin{align}
@@ -341,7 +370,7 @@ Since we assumed there is only stimulated absorption taking place in the system,
     \frac{dn_{1}}{dt} = (\frac{dn_{1}}{dt})_{st.a.}
 \end{equation*} \vspace{.1cm}
 
-Now, we can plug equation (8) into it,
+Now, we can plug Equation (11) into it,
 \begin{equation*}
     \frac{dn_{1}}{dt} = -B_{12}n_{1}\rho(\nu) 
 \end{equation*}
@@ -354,18 +383,18 @@ After rearranging the terms, we can integrate the equation on the LHS from $n_{1
     \Rightarrow \frac{n_{1}(t)}{n_{1}(0)} & = e^{-B_{12}\rho(\nu)t}
 \end{align}
 
-Now, we can substitute the equation (12) into it,
+Now, we can substitute the Equation (15) into it,
 \begin{equation*}
     P^c(t) = e^{-B_{12}\rho(\nu)t}
 \end{equation*}
 
-Using equation (11), we can find the value of $P(t)$,
+Using Equation (14), we can find the value of $P(t)$,
 \begin{align}
     P(t) & = 1 - P^c(t) \notag \\
     \Rightarrow P(t) & = 1 - e^{-B_{12}\rho(\nu)t}
 \end{align}
 
-Thus, we have arrived at the equation for the probability of an atom undergoing stimulated absorption . \textbf{Note} that this has been derived under the assumption that no other interactions (such as stimulated emission or spontaneous emission) are taking place. In reality (e.g., in the lasing process), all three interactions (i.e. stimulated absorption, stimulated emission, and spontaneous emission) take place when radiation of sufficient energy is incident on the system, so in such cases, we cannot apply this equation. \vspace{.2cm}
+Thus, we have arrived at the equation for the probability of an atom undergoing stimulated absorption . \textbf{Note} that this has been derived under the assumption that no other interactions (such as stimulated emission or spontaneous emission) are taking place. In reality (e.g., in the lasing process), all three interactions (i.e. stimulated absorption, stimulated emission, and spontaneous emission) take place when radiation having required frequency is incident on the system, so in such cases, we cannot apply this equation. \vspace{.2cm}
 
 Interactions like stimulated absorption usually occur almost instantly, so we can consider $t \rightarrow 0$. To simplify our equation further, we can use the limit $t \rightarrow 0$, for which we will divide our equation with $t$ first,
 
@@ -380,30 +409,30 @@ Now, apply limits only on the RHS of the equation,
     \Rightarrow P(t) &= B_{12}\rho(\nu)t
 \end{align} 
 
-Usually, when applying limits, we have to apply it on both sides not just on one side of the equation. However, in this case, we were trying to simplify by approximation. \textbf{Note} that if $t$ is significant enough, this equation fails because of the approximation, so in such cases, we have to use equation (14). \vspace{.2cm}
+Usually, when applying limits, we have to apply it on both sides not just on one side of the equation. However, in this case, we were trying to simplify by approximation. \textbf{Note} that if $t$ is significant enough, this equation fails because of the approximation, so in such cases, we have to use Equation (17). \vspace{.2cm}
 
 \begin{note}
     \textbf{Time Saving Result} \vspace{.2cm}
 
-    Exponential functions of form like in equation (14) are very common in Physics. They can be simplified by approximation if $x \to 0$ by applying limits on the RHS.
+    Exponential functions of form like in Equation (17) are very common in Physics. They can be simplified by approximation if $x \to 0$ by applying limits on the RHS.
     \begin{align*}
         y &= 1-e^{kx} \\
         \Rightarrow y & \approx -kx \quad \because x \to 0
     \end{align*}
 \end{note}
 
-By rearranging the terms in equation (15), we can arrive at,
+By rearranging the terms in Equation (18), we can arrive at,
 \begin{equation}
     B_{12} = \frac{P(t)}{\rho(\nu)t}
 \end{equation}
 
-Thus, we can define $B_{12}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{1}$ absorb the incident radiation (of required energy) and get excited to $E_{2}$ in a system where no other interactions (processes) are taking place in a small interval of time. \vspace{.2cm}
+Thus, we can define $B_{12}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{1}$ absorb the incident photon (of required energy) and get excited to $E_{2}$ in a system where no other interactions (processes) are taking place in a small interval of time. \vspace{.2cm}
 
 A lot of books or articles (like Wikipedia), refers Einstein coefficients as "probability" and by "probability", this is what they mean. Truly speaking, Einstein coefficients are more of rate constants (which we can see even in the differential equations) than probability. As the value of einstein coefficient increases, the rate increases and as the rate increases, more atoms excite from $E_{1}$ to $E_{2}$ so there are more chances for an atom in $E_{1}$ to undergo stimulated absorption thus affecting the value of probability. So, even in a system where all kind of interactions takes place, the einstein coefficient is related to probability but not linearly proportional as derived above under several assumptions.
 
 \subsubsection{Stimulated emission-only system}
 
-Let's consider a system where only atoms undergo stimulated emission from $E_{2}$ to $E_{1}$ when a radiation of required energy is incident on it. \vspace{.2cm}
+Let's consider a system where only atoms undergo stimulated emission from $E_{2}$ to $E_{1}$ when a radiation having required frequency is incident on it. \vspace{.2cm}
 
 In this system, let $P(t)$ be the probability of an atom to undergo stimulated emission from $E_{2}$ to $E_{1}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{2}$ state at time $t$ (i.e. not undergoing any transition). \vspace{.2cm}
 
@@ -435,13 +464,13 @@ Now, by rearranging the terms, we arrive at,
     B_{21} = \frac{P(t)}{\rho(\nu)t}
 \end{equation}
 
-Thus, we can define $B_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets stimulated by the incident radiation (of required energy) and get de-excited to $E_{1}$ emitting a radiation of an equal energy in a system where no other interactions (processes) are taking place in a small interval of time.
+Thus, we can define $B_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets stimulated by the incident photon (of required energy) and get de-excited to $E_{1}$ emitting a photon of an equal energy in a system where no other interactions (processes) are taking place in a small interval of time.
 
 \subsubsection{Spontaneous emission-only system}
 
 Let's consider a system where only atoms undergo spontaneous emission from $E_{2}$ to $E_{1}$. In this system, let $P(t)$ be the probability of an atom to undergo spontaneous emission from $E_{2}$ to $E_{1}$ at time $t$ and let $P^c(t)$ be the probability of an atom to remain in the same $E_{2}$ state at time $t$ (i.e. not undergoing any transition). \vspace{.2cm}
 
-Since spontaneous emission is a type of emission process similar to stimulated emission, with the key difference being that spontaneous emission does not require incident radiation to be stimulated and is thus independent of the spectral energy density of the incident radiation, we can modify the equation for the probability of stimulated emission by removing $\rho(\nu)$ and changing the Einstein coefficient $B_{21}$ to $A_{21}$. This modification yields the probability of spontaneous emission.
+Since spontaneous emission is a type of emission process similar to stimulated emission, with the key difference being that spontaneous emission does not require incident photon to stimulate the atom and is thus independent of the spectral energy density of the incident radiation, we can modify the equation for the probability of stimulated emission by removing $\rho(\nu)$ and changing the Einstein coefficient $B_{21}$ to $A_{21}$. This modification yields the probability of spontaneous emission.
 \begin{align*}
     \frac{dn_{2}}{dt} &= -A_{21}n_{2}) \\
     \Rightarrow \frac{n_2(t)}{n_2(0)} &= e^{-A_{21}t} \quad \because \text{Integrating both sides} \\
@@ -455,24 +484,24 @@ Now, by rearranging the terms, we arrive at,
     A_{21} = \frac{P(t)}{t}
 \end{equation}
 
-Thus, we can define $A_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets de-excited to $E_{1}$ emitting a radiation (of a required energy) in a system where no other interactions (processes) are taking place in a small interval of time.
+Thus, we can define $A_{21}$ as the probability per unit time per unit energy density of the radiation field per unit frequency that an atom in $E_{2}$ gets de-excited to $E_{1}$ emitting a photon (of a required energy) in a system where no other interactions (processes) are taking place in a small interval of time.
 
 \subsection{Relation between the Einstein Coefficients}
 
-Let's consider a system having two energy levels i.e., $E_{1}$ (ground state) and $E_{2}$ (excited state). If radiation with energy equal to $\Delta E$ between the energy states is incident on the system, then, all the three kind of interactions between radiation and matter will happen. So, at any point of time $t$,
+Let's consider a system having two energy levels i.e., $E_{1}$ (ground state) and $E_{2}$ (excited state). If radiation having a frequency equal to $\nu = \Delta E/h$ between the energy states is incident on the system, then, all the three kind of interactions between radiation and matter will happen. So, at any point of time $t$,
 \begin{align}
     \text{Rate of change in} & = \text{Rate at which atoms} - \text{Rate at which atoms} \notag \\
     \text{no. of atoms in } E_{i} & \quad \text{ are excited from } E_{i} \quad \qquad \text{are de-excited to } E_{i} \notag \\
     \Rightarrow \frac{dn_{i}}{dt} & = (\frac{dn_{i}}{dt})_{st.a.} - ((\frac{dn_{i}}{dt})_{sp.e.} + (\frac{dn_{i}}{dt})_{st.e.}) \notag
 \end{align}
 
-As we have considered, $E_{1}$ (ground state) to be our reference for rate equations, we will take $i = 1$ and plug-in the equations (8), (9), (10) in the above one,
+As we have considered, $E_{1}$ (ground state) to be our reference for rate equations, we will take $i = 1$ and plug-in the equations (11), (12), (13) in the above one,
 \begin{align}
     \Rightarrow \frac{dn_{1}}{dt} & = (\frac{dn_{1}}{dt})_{st.a.} - ((\frac{dn_{1}}{dt})_{sp.e.} + (\frac{dn_{1}}{dt})_{st.e.}) \notag \\
     \Rightarrow \frac{dn_{1}}{dt} & = B_{12}n_{1}\rho(\nu) - (A_{21}n_{2} + B_{21}n_{2}\rho(\nu))
 \end{align}
 
-Now, we can consider Thermodynamic Equilibrium which will make $dn_{1}/dt = 0$ by using the equation (5), 
+Now, we can consider Thermodynamic Equilibrium which will make $dn_{1}/dt = 0$ by using the Equation (7), 
 \begin{align}
     \Rightarrow 0 & = B_{12}n_{1}\rho(\nu) - (A_{21}n_{2} + B_{21}n_{2}\rho(\nu)) \notag \\
     \Rightarrow B_{12}n_{1}\rho(\nu) & = A_{21}n_{2} + B_{21}n_{2}\rho(\nu)
@@ -486,17 +515,17 @@ Also, we can further manipulate the equation to get the spectral energy density 
     \Rightarrow \rho(\nu) = \frac{A_{21}}{B_{21}} \frac{1}{\frac{B_{12}n_{1}}{B_{21}n_{2}} - 1}
 \end{align*}
 
-As we have already assumed Thermodynamic Equilibrium, we can substitute the Boltzmann factor of equation (6) here,
+As we have already assumed Thermodynamic Equilibrium, we can substitute the Boltzmann factor of Equation (8) here,
 \begin{equation*}
     \Rightarrow \rho(\nu) = \frac{A_{21}}{B_{21}} \frac{1}{\frac{B_{12}}{B_{21}} e^{-\frac{E_{1} - E_{2}}{kT}} - 1}
 \end{equation*} \vspace{.2cm}
 
-We are more interested with the frequency of incident radiation involved in the interaction (also spectral energy density is a function of that frequency), so we can substitute equation (2) here,
+We are more interested with the frequency of incident photon involved in the interaction (also spectral energy density is a function of that frequency), so we can substitute Equation (4) here,
 \begin{equation}
     \Rightarrow \rho(\nu) = \frac{A_{21}}{B_{21}} \frac{1}{\frac{B_{12}}{B_{21}} e^{\frac{hf}{kT}} - 1}
 \end{equation}
 
-Now, compare this equation with Planck's law in equation (7), we get,
+Now, compare this equation with Planck's law in Equation (9), we get,
 \begin{align}
     \frac{A_{21}}{B_{21}} & = \frac{8\pi h \nu^3}{c^3} \\
     B_{12} & = B_{21}
@@ -504,19 +533,19 @@ Now, compare this equation with Planck's law in equation (7), we get,
 
 \textbf{Note} that these relations are valid only under Thermodynamic Equilibrium conditions. \vspace{.2cm}
 
-Now, $B_{12}$ and $B_{21}$ are same (independent of directions), we can drop the subscript notation for the coefficients when discussing equilibrium conditions, i.e., $A$ is the Einstein coefficient for spontaneous process $(A = A_{21})$ and $B$ is the Einstein coefficient for stimulated process $(B = B_{12} = B_{21})$. With this, we can make equation (21) look more simple,
+Now, $B_{12}$ and $B_{21}$ are same (independent of directions), we can drop the subscript notation for the coefficients when discussing equilibrium conditions, i.e., $A$ is the Einstein coefficient for spontaneous process $(A = A_{21})$ and $B$ is the Einstein coefficient for stimulated process $(B = B_{12} = B_{21})$. With this, we can make Equation (24) look more simple,
 \begin{equation*}
     \rho(\nu) = \frac{A}{B} \frac{1}{e^{\frac{hf}{kT}} - 1}
 \end{equation*} 
 
-From (22), we can see that the rate constant of both stimulated emission and stimulated absorption becomes equal under equilibrium conditions. \vspace{.2cm} 
+From (25), we can see that the rate constant of both stimulated emission and stimulated absorption becomes equal under equilibrium conditions. \vspace{.2cm} 
 
-From (23), we can get this proportional equation,
+From (26), we can get this proportional equation,
 \begin{equation*}
     \frac{A_{21}}{B_{21}} \propto \nu^{3}
 \end{equation*}
 
-Now, substituting (2) in that proportional equation gives us,
+Now, substituting (3) in that proportional equation gives us,
 \begin{equation}
     \frac{A_{21}}{B_{21}} \propto (\Delta E)^{3} \quad \because \nu = \frac{\Delta E}{h}
 \end{equation}
@@ -547,7 +576,7 @@ Here, we can deduce the following,
 
 This makes sense because, the instability of an excited atom increases with energy (i.e. $\Delta E$) absorbed by it to get excited. The instability of an atom makes the atom to de-excite faster without any external aid to make itself stable which makes it probable for spontaneous emission to occur when $\Delta E$ is higher. \vspace{.2cm}
 
-To understand how high is considered high and how low is considered low, we can rearrange the terms in equation (21),
+To understand how high is considered high and how low is considered low, we can rearrange the terms in Equation (24),
 \begin{align}
     \rho(\nu) & = \frac{A_{21}}{B_{21}} \frac{1}{e^\frac{h\nu}{kT} - 1} \quad \because \frac{B_{12}}{B_{21}} = 1 \notag \\
     \Rightarrow \rho(\nu) \frac{B_{21}}{A_{21}} & = \frac{1}{e^\frac{h\nu}{kT} - 1} \notag \\
@@ -591,7 +620,7 @@ From here on, we will understand how a laser works and how it is constructed, us
 
 Laser (or LASER) is an abbreviation for \textbf{Light Amplification by Stimulated Emission of Radiation}. As the name suggests, laser is achieved by amplification of light by stimulated emission. \vspace{.2cm}
 
-\uline{How is amplification of light achieved by stimulated emission?} When we studied about Stimulated Emission, we know than an excited atom gets stimulated by the incident radiation (of required energy) and de excites to the ground state by emitting another incident radiation which travels in the same direction and is in the same phase with the incident radiation. But, what if there are many atoms in an excited state?
+\uline{How is amplification of light achieved by stimulated emission?} When we studied about Stimulated Emission, we know than an excited atom gets stimulated by the incident photon (of required energy) and de excites to the ground state by emitting another photon which travels in the same direction and is in the same phase with the incident photon. But, what if there are many atoms in an excited state?
 
 \begin{figure}[H]
     \centering
@@ -679,7 +708,7 @@ This interference can be either constructive or destructive. We are interested i
 
 Note that the diagrammatic representation of waves in this figure (or any figure in this chapter) is for convenience in illustrating the concept. They don't actually span across the active medium or represent physical waves but are instead a mathematical tool (wave equation) used to understand their behavior. \vspace{.2cm}
 
-\uline{Are photons particles or waves?} In this chapter, we focus solely on the wave nature of photons (probabilistic), rather than their particle nature. \uline{Why?} In phenomena such as lasers, photons exhibit wave-like behavior, making it convenient to model them as waves for mathematical analysis. For example, if we keep the wavelength of photons in the active medium, \(\lambda\), constant and vary the length of the active medium, \(L\), we observe changes in intensity due to interference effects (see Equation (26)). Thus, for these cases, it is simpler to perform calculations by assuming photons as waves.
+\uline{Are photons particles or waves?} In this chapter, we focus solely on the wave nature of photons (probabilistic), rather than their particle nature. \uline{Why?} In phenomena such as lasers, photons exhibit wave-like behavior, making it convenient to model them as waves for mathematical analysis. For example, if we keep the wavelength of photons in the active medium, \(\lambda\), constant and vary the length of the active medium, \(L\), we observe changes in intensity due to interference effects (see Equation (29)). Thus, for these cases, it is simpler to perform calculations by assuming photons as waves.
 \vspace{.2cm}
 
 With more and more interference with photons, the standing wave amplifies (i.e. amplitude increases). Given, there is a finite amount of excited atoms, it will reach a saturation point at some point of time. \vspace{.2cm}
