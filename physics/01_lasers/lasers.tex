@@ -9,7 +9,8 @@
 \usepackage{caption}
 \usepackage{tcolorbox}
 \usepackage{titlesec}
-\usepackage{ulem}
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
 
 \titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
@@ -201,13 +202,14 @@ In transition of atoms, involving only two states, the rates of other states wil
 
 \subsection{Thermodynamic Equilibrium}
 
-At Thermodynamic Equilibrium, the net energy exchanged will be 0 (energy exchange will happen but the sum will be 0). Excitation and de-excitation of atoms are energy exchanges too as they involve absorbing and emitting radiation (energy), so at Thermodynamic Equilibrium, the net change in the number of excited atoms will be 0 too. \vspace{.2cm}
-
-This means, for any state $i$ at Thermodynamic Equilibrium, 
-
+At Thermodynamic Equilibrium, the net exchange of energy will be 0. Since the excitation and de-excitation of atoms involve energy exchanges through the absorption and emission of radiation, at thermodynamic equilibrium, the net change in the number of excited atoms will also be zero. This means, for any state $i$ at Thermodynamic Equilibrium, 
 \begin{equation}
     \frac{dn_{i}}{dt} = 0
 \end{equation}
+
+\uline{What is the difference between Thermal and Thermodynamic Equilibri-\\-um?} Thermal Equilibrium means the net exchange of heat in the system will be 0 while the Thermodynamic Equilibrium means the net exchange of energy (not just heat but any kind of energy) will be 0. So, for a system to be under Thermodynamic Equilibrium, it must be under Thermal, Mechanical and Chemical Equilibrium. \vspace{.2cm}
+
+Note that when we say the net exchange is zero, it does not mean there is no flow at all; rather, it means the flow in one direction is the same as in the opposite direction, making the net flow zero. This is the basic concept of dynamic equilibrium. \vspace{.2cm}
 
 \subsection{Boltzmann Factor}
 
@@ -242,15 +244,13 @@ Read more about this \href{https://en.wikipedia.org/wiki/Einstein_coefficients}{
 
 \subsection{Spectral Energy Density}
 
-For a radiation of continous spectrum of frequencies ranging from $v_{min}$ to $v_{max}$, let $\rho(\nu)d\nu$ be the energy incident per unit volume (i.e. energy density) of the radiations having frequencies between $\nu$ and $\nu + d\nu$ in the spectrum. \vspace{.2cm}
-
-Here, $\rho(\nu)$ is called as spectral energy density (having dimensions of $E/A\nu$) which is the energy density per frequency of radiations having frequencies between $\nu$ and $\nu + d\nu$. In some books (like Basavaraju's), this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \vspace{.2cm}
-
-We already discussed about how the frequencies of photons vary with small values $d\nu$ in a radiation of frequency $\nu$ in Subsection (1.5). With this parameter, we can take account for the variation and find the total energy of the radiation more accurately than in Equation (2),
+For a radiation of continous spectrum of frequencies ranging from $v_{min}$ to $v_{max}$, let $\rho(\nu)d\nu$ be the energy incident per unit volume (i.e. energy density $U$) of the radiations having frequencies between $\nu$ and $\nu + d\nu$ in the spectrum. \vspace{.2cm}
 
 \begin{equation}
-    E_{\text{radiation}} = \text{Volume } \times \text{ } \int_{\nu_{min}}^{\nu_{max}} \rho(\nu) d\nu
-\end{equation} \vspace{.2cm}
+    U_{\text{radiation}} = \frac{E_{\text{radiation}}}{V} = \int_{\nu_{min}}^{\nu_{max}} \rho(\nu) d\nu
+\end{equation} \vspace{.1cm}
+
+Here, $\rho(\nu)$ is called as spectral energy density (having dimensions of $E/A\nu$) which is the energy density per frequency of radiations having frequencies between $\nu$ and $\nu + d\nu$. In some books (like Basavaraju's), this has been represented by $U_{\gamma}$ where the frequency is represented by $\gamma$. \vspace{.2cm}
 
 According to \textbf{Planck's law}, the spectral energy density is given as,
 
@@ -258,7 +258,7 @@ According to \textbf{Planck's law}, the spectral energy density is given as,
     \rho(\nu) = \frac{8\pi h\nu^3}{c^3} \frac{1}{e^\frac{h\nu}{kT} - 1}
 \end{equation}
 
-We can substitute this into Equation (10) and get a complete equation for the $E_{\text{radiation}}$ but, we will deal with that later in Quantum Physics.
+We can substitute this into Equation (9) and get a complete equation for the $E_{\text{radiation}}$ but, we will deal with that later in Quantum Physics.
 
 \subsection{Description of Einstein's coefficients}
 
@@ -630,7 +630,7 @@ Laser (or LASER) is an abbreviation for \textbf{Light Amplification by Stimulate
 
 The incident photon stimulates the first excited atom, resulting in two in-phase photons traveling in the same direction. These two photons then stimulate two other excited atoms, resulting in four in-phase photons travelling in the same direction. These four photons stimulate four more excited atoms, resulting in eight in-phase photons travelling in the same direction, and so on, creating a chain reaction and a bunch of photons traveling in the same direction resulting in the amplification of light. \vspace{.3cm}
 
-Although this may sound simple, there is a lot going on in reality that we need to take into account. Starting with the fact that the diagrammatic representation of this process in Figure (7) is only from the perspective of energy levels (i.e., energy level diagrams), as we have already discussed, these atoms are actually scattered throughout the system. Therefore, achieving unidirectional, highly collimated, monochromatic, coherent light (i.e., laser light) in reality requires a great deal of work in the construction of a laser.
+Although this may sound simple, there is a lot going on in reality that we need to take into account. Starting with the fact that the diagrammatic representation of this process in Figure (7) is only from the perspective of energy levels (i.e., energy level diagrams), as we have already discussed, these atoms are actually scattered throughout the system. Therefore, achieving unidirectional, highly collimated (less divergent), monochromatic, coherent light (i.e., laser light) in reality requires a great deal of work in the construction of a laser.
 
 \subsection{Construction of a Laser}
 
@@ -661,7 +661,7 @@ The supplied energy excites alot of atoms in the ground state to the excited sta
     \caption{System under equilibrium (a) and System after population inversion (b)}
 \end{figure}
 
-\subsubsection{Metastable states}
+\subsubsection{Metastable States}
 
 When an atom excites to an excited state, it becomes very unstable and tends to de-excite spontaneously (almost instantly). The average time for which an atom remains in an excited state is $10^{-8}\,\text{s}$, after which it de-excites spontaneously. This is a problem because the atom gets de-excited spontaneously before even the photon reaches the atom to de-excite it through stimulation and amplify the radiation.
 \vspace{.2cm}
@@ -670,11 +670,11 @@ There are certain exceptional energy states in certain elements where the averag
 
 This is why active medium in the lasers consists of atoms or ions with such exceptional \textbf{Metastable states} to absorb energy and undergo stimulated emission which increases the output of the laser beam by being excited for long time and making it more probable for a photon to stimulate an excited atom.
 
-\subsubsection{Formation of Standing Waves}
+\subsubsection{Emission of Laser Beam}
 
-One of the most important aspect of laser is that how it's beam is highly collimated and coherent. This is achieved by the way how lasers are constructed. \vspace{.2cm}
+One of the most important aspect of laser is that how it's beam is highly collimated, unidirectional and coherent. This is achieved by the way how lasers are constructed. \vspace{.2cm}
 
-When pumping takes place, alot of atoms in the active medium gets excited. Initially, there will not be many photons in the active medium to start the chain of stimulated emission so few excited atoms in the active medium have to undergo spontaneous emission releasing photons. We know, in spontaneous emissions, there is no phase relationship between the absorbed and emitted radiation so the photons are emitted in various directions. But, we need our laser beam to be highly collimated so we have to filter out photons which are not travelling parallel the axis of the active medium. \vspace{.2cm}
+When pumping takes place, alot of atoms in the active medium gets excited. Initially, there will not be many photons in the active medium to start the chain of stimulated emission so few excited atoms in the active medium have to undergo spontaneous emission releasing photons. We know, in spontaneous emissions, there is no phase relationship between the absorbed and emitted radiation so the photons are emitted in various directions. But, we need our laser beam to be unidirectional so we have to filter out photons which are not travelling parallel the axis of the active medium. \vspace{.2cm}
 
 If you observe Figure (8), the active medium is enclosed by two mirrors on either side, with its length exposed. Photons that do not travel parallel to the axis of the active medium undergo several reflections between the mirrors and eventually escape the medium. In contrast, photons traveling parallel to the axis remain perpendicular to the mirrors. Even after multiple reflections, they stay in the same line, allowing only the photons traveling parallel to the axis to remain within the active medium.
 
@@ -684,37 +684,88 @@ If you observe Figure (8), the active medium is enclosed by two mirrors on eithe
     \caption{Filtration of photons which are not travelling parallel to the axis.}
 \end{figure}
 
-Once the filtration is done, photons which are travelling along the direction of the axis will be only left. From there onwards, those photons start the chain process of stimulated emissions. We know, in stimulated emission, there is a phase relationship with the stimulated and emitted photon so the photons which are emitted from the stimulated emissions therafter will also be travelling parallel to the principal axis thus making the beam highly collimated. \vspace{.2cm}
+Once the filtration is done, photons which are travelling along the direction of the axis will be only left. From there onwards, those photons start the chain reaction of stimulated emissions. We know, in stimulated emission, there is a phase relationship with the stimulated and emitted photon so the photons which are emitted from the stimulated emissions therafter will also be travelling parallel to the principal axis thus making the beam highly unidirectional. \vspace{.2cm}
 
-Now, with the filtration being done, the photons only travel parallel to the axis but they still have the freedom to move either in left to right or right to left. So, it is very much probable that a photon meets another photon in the same path but from the opposite direction resulting in an interference of waves. \vspace{.2cm}
+\uline{How are we going to emit the laser beam?} We did say that there are mirrors on both the sides of the active medium but only one of them is 100\% reflecting (left one in Figure (8)) while the other one is 99\% reflecting (right one in Figure (8)), i.e. only 1\% of radiation (number of photons - not energy) incident on that mirror is actually emitted as laser beam while the remaining 99\% is used to stimulate more atoms and continue the chain of stimulated emissions. \vspace{.2cm}
+
+And with the filtration being done, the photons only travel parallel to the axis but they still have the freedom to move either in left to right or right to left. So, it is very much probable that a photon meets another reflected photon travelling in the same path but from the opposite direction resulting in an interference of waves. \vspace{.2cm}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=.8]{./img/13_meeting_waves.png}
-    \caption{Two photons meeting along the same line}
+    \includegraphics[scale=.8]{./img/13.1_meeting_waves.png}
+    \caption{Interference of photons with some being emitted}
 \end{figure}
 
-This interference can be either constructive or destructive. We are interested in a laser beam with maximum intensity, so we will be only considering the case of constructive interference. We know, when waves from two opposite directions constructively interfere, it results in \textbf{Standing Waves}. Similarly, these photons constructively interfere and result in standing waves. Here, the active medium having mirrors on both of its sides acts like a closed organ pipe. So, we can simply apply the formula of closed organ pipe, \vspace{.2cm}
+As many atoms continuously emit photons along lines parallel to the axis of the active medium, we can consider all the photons emitted along a single such line to form a wave of radiation, whose amplitude and energy increases as more atoms along that line de-excite and emit photons in the same direction. Generally, when we talk about the wave of radiation (electromagnetic wave specifically here), the amplitude is the maximum electric field strength $E_0$ and the energy is  \vspace{.2cm}
 
-\begin{equation}
-    L = n\frac{\lambda}{2}, \quad n \in \mathbb{N}
-\end{equation}
+When this wave of radiation strikes the 99\% reflecting mirror, 1\% of the radiation (i.e., 1\% of the photons) is transmitted and emitted as the laser, while the remaining 99\% is reflected and used to stimulate more excited atoms. This stimulates additional photon emission, which increases the net energy of the wave of radiation, making it more intense. \vspace{.2cm}
+
+
+We know that when two waves traveling in opposite directions with the same amplitude and frequency interfere constructively, they produce \textbf{Standing waves}. Similarly, when the reflected wave of radiation meets the other one traveling in the opposite direction, which is yet to be reflected. The same phenomenon occurs here, i.e. a standing wave pattern can be observed in the active medium with mirrors on either side, making it act like a closed organ pipe. \vspace{.2cm} 
+
+Although the reflected standing wave loses some photons, which in turn decreases its energy and frequency, the frequency will roughly remain similar (because the photons lost is just 1\% and very insignificant) to the unreflected wave to constructively interfere with it and produce a stable standing wave pattern. \vspace{.2cm}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=.8]{./img/14_standing_waves.png}
+    \includegraphics[scale=.5]{./img/17_standing_waves.png}
     \caption{Standing waves in the active medium}
 \end{figure}
 
-Note that the diagrammatic representation of waves in this figure (or any figure in this chapter) is for convenience in illustrating the concept. They don't actually span across the active medium or represent physical waves but are instead a mathematical tool (wave equation) used to understand their behavior. \vspace{.2cm}
+\uline{What does Standing Waves actually mean in a physical sense?} The concept of standing waves is simply an illusion of the net effect. In other words, the two waves (i.e., photons) are still moving in opposite directions, but when we observe their net effect, the result appears as a standing wave. A good comparison would be mixing blue and red paint: the net result is purple paint, but this is just an illusion of the two pigments being mixed together. The paint is still technically composed of blue and red particles, but the net effect makes it appear purple. Similarly, the standing waves are net effect of the waves moving. \vspace{.2cm}
 
-\uline{Are photons particles or waves?} In this chapter, we focus solely on the wave nature of photons (probabilistic), rather than their particle nature. \uline{Why?} In phenomena such as lasers, photons exhibit wave-like behavior, making it convenient to model them as waves for mathematical analysis. For example, if we keep the wavelength of photons in the active medium, \(\lambda\), constant and vary the length of the active medium, \(L\), we observe changes in intensity due to interference effects (see Equation (29)). Thus, for these cases, it is simpler to perform calculations by assuming photons as waves.
-\vspace{.2cm}
+Note that these standing waves don't actually span across the active medium or represent physical waves as shown in the diagram above, but rather serve as a simplified representation for the sake of visualization. This was already explained in 1.5. Wave nature of Photons. \vspace{.2cm}
 
-With more and more interference with photons, the standing wave amplifies (i.e. amplitude increases). Given, there is a finite amount of excited atoms, it will reach a saturation point at some point of time. \vspace{.2cm}
+\uline{Why are we interested in these Standing Waves?} Along a line parallel to the axis, there will be several photons traveling, which we cannot account for individually. Therefore, we consider the net effect, which is the standing wave. The properties of standing waves, such as amplitude, intensity, and frequency, provide the result of the process, as we are only interested in the net outcome. \vspace{.2cm}
 
-\uline{How do we emit our standing wave as laser beam?} Although, we did say there are mirrors on both the side of the active medium. Only one of them is 100\% reflecting (left one in Figure (8)) while the other one is 99\% reflexting (right one in Figure (8)), i.e. only 1\% of light incident on that mirror is actually emitted as laser beam while the remaining 99\% is used to maintain standing wave and amplify itself. \vspace{.2cm}
+\uline{Why do we need such highly reflecting mirror to emit laser beam? Why not a 50\% reflecting mirror?} 
+To amplify radiation in the active medium of a laser, we rely on the interference of photons. To achieve maximum amplification, it is essential to maximize the number of photons undergoing interference. For interference to occur, two photons must travel in opposite directions; therefore, we need an equal number of photons moving in both directions. By both directions, we mean photons moving left to right and right to left parallel to the axis of the active medium (as in Figure (11)). To facilitate this, we use highly reflective mirrors on both sides of the active medium, ensuring that photons are evenly distributed in both directions along that line and thus maximizing interference. However, we also need a portion of this amplified light to be emitted as the laser beam. By designing the output mirror to be 99\% reflective, we achieve near-equal photon distribution in both directions, maximizing interference and amplification. This results in an extremely intense 1\% output beam, which is sufficient for our purposes. \vspace{.2cm}
 
-Also, note that there will be no one big standing wave in the  as illustrated in Figure (12), there will be multiple standing wave across each possible path parallel to the axis which are emitted together from the partially reflecting mirror. Unlike in Figure (8), the laser beam output will be all area of the cross section of the active medium. From this, we can understand that, to keep the laser beam more thin, we have to reduce the radius of the active medium.
+Instead of 90\%, if we had placed a 50\% reflecting output mirror, there will be less interference of photons which results in less amplification and the remaining 50\% output laser beam won't even be as intense as the 1\% from the 99\% reflecting output mirror. \vspace{.2cm}
+
+Now, we need to focus on increasing the output of the beam using the concept of standing waves. Standing waves undergo resonance (i.e., amplification of amplitude) when the length of the container is an integral multiple of the number of half-wavelength segments (i.e., loops) in the standing wave. Since the length of each loop is half the wavelength, we can express the relation as,
+
+\begin{equation}
+    L = n\frac{\lambda}{2} \quad \forall \text{  } n \in \mathbb{N}
+\end{equation} \vspace{.2cm}
+
+% Insert the diagram
+
+In the case of lasers, standing waves are also present, and the active medium enclosed between two mirrors behaves like a closed organ pipe. Therefore, we can apply the same concept of resonance to maximize the output of the laser beam. Here, \( L \) represents the length of the active medium, and \( \lambda \) is the wavelength of the wave. The integer multiple \( n \) is called the \textbf{mode} of the wave, which corresponds to the number of loops, or equivalently, the number of antinodes in the standing wave,
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{./img/15_modes.png}
+    \caption{Different modes in an active medium}
+\end{figure} \vspace{.2cm}
+
+So, our active medium must be built for only those specific allowed lengths to achieve maximum output. Since we use the concept of resonance in the active medium, we often refer to the active medium as a \textbf{Resonant Cavity}. \vspace{.2cm}
+
+So far, in our diagrams (like in Figure (12)), we only show one standing wave in the whole active medium which is again just for simplistic representation. Standing waves are formed along every line parallel to the axis in the active medium.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{./img/16_mult_standing_waves.png}
+    \caption{Multiple standing waves}
+\end{figure}
+
+\subsubsection{Mechanism Summarised}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{./img/08_working_of_laser.png}
+    \caption{Diagrammatic representation of steps involved in lasing action}
+\end{figure}
+
+\begin{enumerate}[itemsep=0em]
+    \item All atoms in the active medium are initially in the ground state.
+    \item Pumping occurs, resulting in population inversion.
+    \item Some atoms spontaneously de-excite, initiating a chain of stimulated emission.
+    \item Photons not aligned along the axis are filtered out, leaving behind those along the axis, which cause other excited atoms to undergo stimulated emission, further releasing photons in the same direction.
+    \item Through multiple reflections within the active medium, more photons are emitted along the same path, increasing the intensity. At the same time, part of this emission is released as the output beam.
+    \item After some time, all excited atoms in the active medium de-excite and return to the ground state.
+    \item The entire process then repeats.
+\end{enumerate}
+
+The beam starts to emit with a low intensity initially and it reaches a peak with all the interference of waves happening inside and then becomes dull as all atoms gets de-exciting leaving behing no photon to emit. The beam emitted during this period is called as \textbf{Pulse}.
 
 \end{document}
