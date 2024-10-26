@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, pdfborder={0 0 0}, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{anysize}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
+
+\titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
+
+\titlespacing*{\subsubsection}{0pt}{.8em}{.3em}
+
+\renewcommand{\ULthickness}{1pt}
+\renewcommand{\ULdepth}{0.5ex}  
+
+\begin{document}
+  
+
+\fontsize{14}{16}
+\selectfont
+\captionsetup[figure]{font=normal}
+\newtcolorbox{note}[1][]{colback=white, colframe=black, sharp corners, boxrule=0.3mm, #1}
+\newtcolorbox{block}[1][left=1cm, top=-.2cm, bottom=-.2cm]{colback=white, colframe=white, sharp corners, boxrule=0.3mm, #1}
+
+\title{Partial Derivatives}
+\author{Sudarsan D Naidu}
+\maketitle
+
+\tableofcontents
+
+\section{Definition}
+
+Partial Derivative represents how the multivariate function changes with respect to one variable while keeping all other variables constant. It is represented by $\frac{\partial}{\partial x}$ \vspace{.2cm}
+
+Now, let's consider a multivariate function $f(x_1, x_2, ..., x_n)$ which depends on $n$ variables. We can express the partial derivation of the function with respect to the variable $x_i$ as a limit, \vspace{.2cm}
+\begin{align}
+    & \hspace{-\leftmargin} \frac{\partial}{\partial x_i}f(x_1, x_2, ..., x_i, ..., x_n) \notag \\
+    & = \lim_{h \to 0} \frac{f(x_1, x_2, ..., x_i + h, ..., x_n) - f(x_1, x_2, ..., x_i, ..., x_n)}{h}
+\end{align} \vspace{.2cm}
+
+This partial derivative can also be represented as $\frac{\partial f}{\partial x_i}$, $\partial_{x_i} f$ or $f'_{x_i}$.
+
+\section{Total Derivative}
+
+Total derivatives represents how the multivariate function changes with respect to one variable considering the changes in all variables that the function depends on. It is represented by $\frac{d}{dx}$ \vspace{.2cm}
+
+We can express the total derivative of $f$ with respect to a parameter $t$ using the partial derivatives with respect to each of its variables,
+\begin{align}
+    \frac{d}{dx}f(x_1, x_2, ..., x_n) = \frac{\partial f}{\partial x_1} \frac{dx_1}{dx} + \frac{\partial f}{\partial x_2} \frac{dx_2}{dx} + ... + \frac{\partial f}{\partial x_n} \frac{dx_n}{dx}
+\end{align}
+
+\subsection{Univariate Functions}
+
+The concept of Partial and Total Derivatives is only for multivariate functions because for univariate functions, both are the same and are just referred to as "derivatives". \vspace{.2cm}
+
+\begin{note}
+    \textbf{Proof:} \vspace{.2cm}
+
+    Applying the total derivative formula for an univariate function $p(x)$,
+    \begin{align*}
+        \frac{dp}{dx} & = \frac{\partial p}{\partial x} \frac{dx}{dx} \\
+        \Rightarrow \frac{dp}{dx} & = \frac{\partial p}{\partial x}
+    \end{align*}
+\end{note}
+
+\section{Equality of Mixed Partials}
+
+Exchanging the order of partial derivatives of a multivariate function does not change the result if certain conditions are satisfied. See \href{https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives}{Wikipedia}.
+
+\begin{equation}
+    \frac{\partial}{\partial x_i} (\frac{\partial f}{\partial x_j}) = \frac{\partial}{\partial x_j} (\frac{\partial f}{\partial x_i})
+\end{equation} \vspace{.2cm}
+
+The mixed partial $\frac{\partial}{\partial x_i} (\frac{\partial f}{\partial x_j})$ can also be represented as,
+
+\begin{equation*}
+    \frac{\partial^2 f}{\partial x_i \partial x_j} \text{, } \partial_{x_i}\partial{x_j} f \text{ or } f'_{x_{i}x_{j}}
+\end{equation*}
+
+\end{document}
