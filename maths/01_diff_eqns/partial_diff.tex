@@ -36,11 +36,13 @@
 
 \tableofcontents
 
-\section{Definition}
+\section{Introduction}
 
-Partial Derivative represents how the multivariate function changes with respect to one variable while keeping all other variables constant. It is represented by $\frac{\partial}{\partial x}$ \vspace{.2cm}
+\subsection{Partial Derivative}
 
-Now, let's consider a multivariate function $f(x_1, x_2, ..., x_n)$ which depends on $n$ variables. We can express the partial derivation of the function with respect to the variable $x_i$ as a limit, \vspace{.2cm}
+Partial Derivative represents how a multivariate function changes with respect to one variable while keeping all other variables constant. It is represented by $\frac{\partial}{\partial x}$ \vspace{.2cm}
+
+Now, let's consider a multivariate function $f(x_1, x_2, ..., x_n)$ which depends on $n$ independent variables. We can express the partial derivation of the function with respect to the variable $x_i$ as a limit, \vspace{.2cm}
 \begin{align}
     & \hspace{-\leftmargin} \frac{\partial}{\partial x_i}f(x_1, x_2, ..., x_i, ..., x_n) \notag \\
     & = \lim_{h \to 0} \frac{f(x_1, x_2, ..., x_i + h, ..., x_n) - f(x_1, x_2, ..., x_i, ..., x_n)}{h}
@@ -48,18 +50,42 @@ Now, let's consider a multivariate function $f(x_1, x_2, ..., x_n)$ which depend
 
 This partial derivative can also be represented as $\frac{\partial f}{\partial x_i}$, $\partial_{x_i} f$ or $f'_{x_i}$.
 
-\section{Total Derivative}
+\subsection{Total Derivative}
 
-Total derivatives represents how the multivariate function changes with respect to one variable considering the changes in all variables that the function depends on. It is represented by $\frac{d}{dx}$ \vspace{.2cm}
+Total derivatives represents how a multivariate function changes with respect to one variable considering the changes in all variables that the function depends on. It is represented by $\frac{d}{dx}$ \vspace{.2cm}
 
-We can express the total derivative of $f$ with respect to a parameter $t$ using the partial derivatives with respect to each of its variables,
+We can express the total derivative of $f$ with respect to a parameter $x$ using the partial derivatives with respect to each of its variables,
 \begin{align}
     \frac{d}{dx}f(x_1, x_2, ..., x_n) = \frac{\partial f}{\partial x_1} \frac{dx_1}{dx} + \frac{\partial f}{\partial x_2} \frac{dx_2}{dx} + ... + \frac{\partial f}{\partial x_n} \frac{dx_n}{dx}
 \end{align}
 
-\subsection{Univariate Functions}
+One can prove this by simply reverse engineering the chain rule of derivatives. \vspace{.2cm}
 
-The concept of Partial and Total Derivatives is only for multivariate functions because for univariate functions, both are the same and are just referred to as "derivatives". \vspace{.2cm}
+\subsubsection{Total Derivative w.r.t an Independent variable}
+
+If the $n$ variables of the function $f$ are independent of each other, then the total derivative of the function with respect to any of it's variable will be same as it's partial derivative.
+
+\begin{note}
+    \textbf{Proof:} \vspace{.2cm}
+
+    Let's consider a function $f(x_1, x_2, ..., x_n)$ depending on $n$ independent variables,
+
+    \begin{equation*}
+        \frac{dx_i}{dx_j} = 0 \text{,  } \forall \text{ } 0 < i, j \leq n \text{, } i \neq j
+    \end{equation*}
+
+    Now applying the total derivative formula, to find the total derivative of $f$ with respect to $x_i \text{ } (0 < i \leq n)$,
+
+    \begin{align*}
+        \frac{df}{dx_i} &= \frac{\partial f}{\partial x_1} \frac{dx_1}{dx_i} + \frac{\partial f}{\partial x_2} \frac{dx_2}{dx_i} + ... + \frac{\partial f}{\partial x_i} \frac{dx_i}{dx_i} + ... + \frac{\partial f}{\partial x_n} \frac{dx_n}{dx_i} \\
+        \Rightarrow \frac{df}{dx_i} &= \frac{\partial f}{\partial x_1} \cdot 0 + \frac{\partial f}{\partial x_2} \cdot 0 + ... + \frac{\partial f}{\partial x_i} \cdot 1 + ... + \frac{\partial f}{\partial x_n} \cdot 0 \\
+        \Rightarrow \frac{df}{dx_i} &= \frac{\partial f}{\partial x_i}
+    \end{align*}
+\end{note}
+
+\subsection{Derivative of Univariate Functions}
+
+So far, we have only been dealing with univariate functions (functions which depend only on one variable) that depend on a single variable, so there was no need for 'partial derivatives' and 'total derivatives,' as both of them are the same and are simply referred to as 'derivatives'. \vspace{.2cm}
 
 \begin{note}
     \textbf{Proof:} \vspace{.2cm}
@@ -69,7 +95,9 @@ The concept of Partial and Total Derivatives is only for multivariate functions 
         \frac{dp}{dx} & = \frac{\partial p}{\partial x} \frac{dx}{dx} \\
         \Rightarrow \frac{dp}{dx} & = \frac{\partial p}{\partial x}
     \end{align*}
-\end{note}
+\end{note} \vspace{.2cm}
+
+We can think of the 'derivatives' of the univariate functions we've been dealing with so far as the partial derivatives with respect to their only variable.
 
 \section{Equality of Mixed Partials}
 
@@ -84,5 +112,24 @@ The mixed partial $\frac{\partial}{\partial x_i} (\frac{\partial f}{\partial x_j
 \begin{equation*}
     \frac{\partial^2 f}{\partial x_i \partial x_j} \text{, } \partial_{x_i}\partial{x_j} f \text{ or } f'_{x_{i}x_{j}}
 \end{equation*}
+
+\section{Integrating Partial Derivatives}
+
+We have learnt that derivative and integral cancels out for a univariate function. Take $p(x)$,
+
+\begin{equation*}
+    \int \frac{dp}{dx} \text{ } dx = p(x) + c
+\end{equation*} \vspace{-.2cm}
+
+where, $c$ is some constant (i.e. independent of x). This is called as \textbf{First Fundamental Theorem of Calculus}. \vspace{2cm}
+
+When taking about multivariate functions, it is better to say that partial derivative and integral cancels out. Take $f(x_1, ..., x_i, ..., x_n)$,
+\begin{equation*}
+    \int \frac{\partial}{\partial x_i} f(x_1, ..., x_n) \text{ } dx_i = f(x_1, ..., x_n) + C(x_1, ..., x_{i-1}, x_{i+1}, ..., x_n)
+\end{equation*}
+
+where $C(x_1, ..., x_{i-1}, x_{i+1}, ..., x_n)$ is a function which depends on all variables on $f$ except for $x_i$ (i.e. independent of $x_i$ or constant with respect to $x_i$). \vspace{.2cm}
+
+The above equation can be taken as a generalised form of \textbf{First Fundamental Theorem of Calculus} for a multivariate function.
 
 \end{document}
